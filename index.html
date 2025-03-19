@@ -26,6 +26,7 @@
                         <a href="#main-project" style="text-decoration: none; color: black;">Project</a>
                     </li>
                     <li>
+                        
                         <button class="get-in-touch">
                             Get in Touch
                         </button>
@@ -278,20 +279,25 @@
                     <Span  style="text-align: right; text-decoration: underline;"><h3> <img src="Images/telephone (1).png" alt="Phone" style="width: 18px;"> Call 9910331579</h3></Span>
                 </div>
                 <div class="contact-field">
-                    <ul>
-                        <li>
-                            <input type="text" name="name" id="name" placeholder="Enter your Name"><input type="text" name="email" id="email"  placeholder="Enter your Email">
-                        </li>
-                        <li>
-                            <input type="text" name="code" id="code" placeholder="+1">
-                            <input type="text" name="number" id="number" placeholder="Enter your Phone Number" >
-                        </li>
-                        <li>
-                            <textarea name="requirements" id="requirements" style="resize: none;" placeholder="Please Describe your Requirements"></textarea>
-                        </li>
-                        <li>
-                            <button class="get-callback">Get a Call Back</button>
-                        </li>
+                    <form action="/submit-form" method="POST"> 
+                        <ul> 
+                            <li>
+                                <input type="text" name="name" id="name" placeholder="Enter your Name">
+                                <input type="text" name="email" id="email" placeholder="Enter your Email">
+                            </li>
+                            <li>
+                                <input type="text" name="code" id="code" placeholder="+1">
+                                <input type="text" name="number" id="number" placeholder="Enter your Phone Number">
+                            </li>
+                            <li>
+                                <textarea name="requirements" id="requirements" style="resize: none;" placeholder="Please Describe your Requirements"></textarea>
+                            </li>
+                            <li>
+                                <button type="submit" class="get-callback">Get a Call Back</button>
+                            </li>
+                        </ul>
+                    </form>
+                    
                         <li>
                             <h1 id="Whatsapp-message">
                                 Send a message on Whatsapp to connect with us!
