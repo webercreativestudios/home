@@ -30,7 +30,14 @@
 <body>
     <Header>
         <div class="navbar">
-            <div class="logo"> <img src="Images/logo4.png" alt="logo" style="width: 120px;"></div>
+            <div class="logo">
+                <img src="Images/logo4.png" alt="logo" style="width: 120px;">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <div class="options">
                 <ul>
                     <li>
@@ -46,12 +53,12 @@
                         <a href="#main-contact"><button class="get-in-touch">
                             Get in Touch
                         </button></a>
-                        
                     </li>
                 </ul>
             </div>
         </div>
     </Header>
+    
     <section class="Hero">
         <div class="main-hero">
             <div class="side-hero">
@@ -113,7 +120,7 @@
                     </P></li>
                     <li class="about-list">
                         <div style="display: flex; justify-content: space-between;width: 80%;"class="progress"  >
-                            <p style="font-weight: 600;">Website & App Development</p>
+                            <p style="font-weight: 600;">Web & App Development</p>
                             <p style="text-align: right;">90%</p>
                         </div>
                         <div style="width: 80%; background-color: white; border: 1px solid gray; height: 15px; margin-top: 10px; border-radius: 0.375rem;"><div style="background-color: #42545E; width: 90%; height: 100%; border-top-left-radius: 0.375rem;border-bottom-left-radius: 0.375rem;"></span></div>
@@ -136,7 +143,7 @@
                     </li>
                     <li >
                         <div style="display: flex; justify-content: space-between;width: 80%;"class="progress" >
-                            <p style="font-weight: 600;">Search Engine Optimization</p>
+                            <p style="font-weight: 600;">SEO</p>
                             <p style="text-align: right;">80%</p>
                         </div>
                         <div style="width: 80%; background-color: white; border: 1px solid gray; height: 15px; margin-top: 10px; border-radius: 0.375rem;"><div style="background-color: #42545E; width: 80%; height: 100%; border-top-left-radius: 0.375rem;border-bottom-left-radius: 0.375rem;"></span></div>
@@ -307,18 +314,18 @@
                        </span>
                        
                     </li>
-                    <li  class="e-p-o">
+                    <li  class="e-p-o" id="Phone">
                         <span>
 
                             <img src="Images/telephone.png" alt="email"  >
                         </span>
-                       <span class="email-head">
+                       <span class="email-head" >
                         <h3>Phone</h3>
                         <a href="tel:+919910331579" style="cursor: pointer; color: black;">+919910331579</a>
                        </span>
                        
                     </li>
-                    <li  class="e-p-o">
+                    <li  class="e-p-o" id="Location">
                         <span>
 
                             <img src="Images/google-maps.png" alt="email">
@@ -382,11 +389,11 @@
                 <li>
                     <img src="Images/weber-creative-studios-high-resolution-logo (3).png" alt="logo">
                     <h1 style="color: white; margin-top: -30px;
-                    ">&copy; 2025 Weber Creative Studios</h1>
+                    "> Weber Creative Studios - &copy; 2025</h1>
                 </li>
-                <li>
+                <li class="footer-services">
 
-                    <h1 style="color: white;">Services</h1>
+                    <h1 style="color: white;" >Services</h1>
                     <p>
                         Website Development<br>
                         App Development <br>
@@ -394,7 +401,7 @@
                         Google Ads<br>
                     </p>
                 </li>
-                <li>
+                <li class="footer-services">
 
                     <h1 style="color: white;">Useful Sections</h1>
                     <p>

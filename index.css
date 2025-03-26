@@ -9,40 +9,53 @@ body{
     
 }
 
-Header{
-    /* position: sticky;
-    top: 0; */
+Header {
     overflow: hidden;
     background-color: white;
 }
-.navbar{
 
-    /* z-index: 1000; */
-    /* max-width: 1280px; */
+.navbar {
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 45%;
 }
-.options{
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.options {
     width: 40%;
     font-size: larger;
 }
-.options ul{
+
+.options ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.options ul li{
+.options ul li {
     list-style: none;
     cursor: pointer;
 }
 
-.get-in-touch{
+.get-in-touch {
     width: 120px;
     height: 44px;
     font-size: medium;
@@ -53,6 +66,9 @@ Header{
     border-radius: 50px;
     cursor: pointer;
 }
+
+
+
 
 .main-hero{
     /* max-width: 1280px; */
@@ -77,7 +93,7 @@ Header{
 } 
 
 .side-hero h1{
-    font-size: 4.8rem ;
+    font-size: 4.0rem ;
   
 }
 .side-hero h2{
@@ -129,13 +145,13 @@ Header{
 }
 
 .n-side-about img{
-    height: 500px;
+    height: 550px;
 }
 
 .main-about{
     max-width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
     display: flex;
     justify-content: space-evenly;
@@ -162,7 +178,7 @@ Header{
 } 
 
 .side-about h1{
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   
 }
 .side-about h2{
@@ -582,24 +598,414 @@ footer{
 
 @media (max-width: 360px){}
 @media (max-width: 480px){}
-@media (max-width: 600px){}
-@media (max-width: 768px){}
-@media (min-width: 900px) and (max-width: 1023px){
-    .side-hero h1{
-        font-size: 2.5rem ;
+@media (min-width: 500px) and (max-width: 699px){
+
+    .options {
+        display: none; /* Hide by default */
+        position: absolute;
+        top: 90px; /* Adjust based on your navbar height */
+        left: 15%;
+        right: 0;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease-in-out; /* Smooth transition */
+        opacity: 0; /* Initially hidden */
+        transform: translateY(-20px); /* Initially moved up */
+    }
+
+    .options.show {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0); /* Moves the list into view */
+    }
+
+    .options ul {
+        display: flex;
+        flex-direction: column; /* Stack the options vertically */
+        gap: 15px;
+        align-items: center;
+    }
+
+    .options ul li {
+        font-size: 18px;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .options ul li:hover {
+        background-color: #f0f0f0;
+        border-radius: 5px;
+    }
+
+    .menu-toggle {
+        display: flex; /* Show the menu toggle on small screens */
+    }
+
+
+
+    .menu-toggle.open .bar:nth-child(1) {
+        transform: rotate(45deg); /* Rotate top bar */
+        position: relative;
+        top: 8px; /* Adjust position */
+    }
+
+    .menu-toggle.open .bar:nth-child(2) {
+        opacity: 0; /* Hide middle bar */
+    }
+
+    .menu-toggle.open .bar:nth-child(3) {
+        transform: rotate(-45deg); /* Rotate bottom bar */
+        position: relative;
+        top: -8px; /* Adjust position */
+    }
+
+
+    
+    .side-hero h1 {
+        font-size: 3rem;
         /* color: #4962bf; */
+    }
+    .side-hero p {
+        font-size: 16px;
+        /* color: #4962bf; */
+    }
+    
+    .main-hero{
+        justify-content: center;
+    }
+    .side-hero{
+        width: 90%;
+    }
+    .n-side-about img{
+        display: none;
+    }
+    .options {
+        width: 70%;
+        font-size: 16px;
+    }
+    .image-side-about img{
+        display: none;
+    }
+    .side-about {
+        width: 90%;
+    }
+    .side-about h1{
+       font-size: 3.5rem;
+    }
+    .side-about p{
+       font-size: 17px;
+    }
+
+    .main-about{
+        width: 100%;
+    }
+
+    .card-side-services ul {
+        flex-wrap: wrap;
+        max-width: 1000px;
+        justify-content: center;
+    }
+
+    .card-side-services li {
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .side-services h1{
+        font-size: 3.8rem;
+    }
+    .side-projects h1{
+        font-size: 3.8rem;
+    }
+
+    .main-contact{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .side-contact {
+        width: 70%;
+     }
+     .ready{
+         font-size: 1.2rem;
+         font-weight: 600;
+         /* margin-top: 25px; */
+         line-height: 180%;
+         margin-bottom: 25px;
+     }
+     .ready-points{
+         font-size: 1.3rem;
+         font-weight: 600;
+         /* margin-top: 25px; */
+         line-height: 180%;
+         /* margin-top: -25px; */
+         margin-bottom: 50px;
+         
+     }
+     
+     .side-contact li h1{
+         font-size: 2.0rem;
+         margin-bottom: 30px;
+     }
+     
+     #Location{
+        display: none;
+     }
+
+     .e-p-o img{
+        width: 45px;
+     }
+     
+     .n-side-contact{
+        margin-top: 10px;
+        padding-right: 5px;
+        padding: 4px;
+        width: 580px;
+     }
+     #side-contact{
+        font-size: 3.2rem;
+        margin-bottom: 100px;
+     }
+     
+     .main-footer h1{
+        font-size: 18px;
+    }
+    .main-footer p{
+        margin-top: 10px;
+        font-size: medium;
+        color: white;
+        line-height: 200%;
+    }
+    .main-footer img{
+        width: 100px;
+        margin-bottom: 10px;
+        /* display: none; */
+    }
+    footer{
+        height: 10px;
+        color: #4962bf;
+        /* background-color: white; */
+        padding-bottom: 100px;
+    }
+    .footer-services{
+        display: none;
+    }
+}
+@media (min-width: 700px) and (max-width:899px){
+    .side-hero h1 {
+        font-size: 4.3rem;
+        /* color: #4962bf; */
+    }
+    
+    .main-hero{
+        justify-content: center;
+    }
+    .side-hero{
+        width: 90%;
+    }
+    .n-side-about img{
+        display: none;
+    }
+    .options {
+        width: 70%;
+        font-size: 16px;
+    }
+    .image-side-about img{
+        display: none;
+    }
+    .side-about {
+        width: 90%;
+    }
+
+    .main-about{
+        width: 100%;
+    }
+
+    .card-side-services ul {
+        flex-wrap: wrap;
+        max-width: 1000px;
+        justify-content: center;
+    }
+
+    .card-side-services li {
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .side-services h1{
+        font-size: 4.8rem;
+    }
+    .side-projects h1{
+        font-size: 4.8rem;
+    }
+
+    .main-contact{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .side-contact {
+        width: 70%;
+     }
+     .ready{
+         font-size: 1.2rem;
+         font-weight: 600;
+         /* margin-top: 25px; */
+         line-height: 180%;
+         margin-bottom: 25px;
+     }
+     .ready-points{
+         font-size: 1.3rem;
+         font-weight: 600;
+         /* margin-top: 25px; */
+         line-height: 180%;
+         /* margin-top: -25px; */
+         margin-bottom: 50px;
+         
+     }
+     
+     .side-contact li h1{
+         font-size: 2.0rem;
+         margin-bottom: 30px;
+     }
+     
+     #Location{
+        display: none;
+     }
+
+     .e-p-o img{
+        width: 45px;
+     }
+     
+     .n-side-contact{
+        margin-top: 10px;
+     }
+     #side-contact{
+        font-size: 3.8rem;
+        margin-bottom: 100px;
+     }
+     
+     .main-footer h1{
+        font-size: 18px;
+    }
+    .main-footer p{
+        margin-top: 10px;
+        font-size: medium;
+        color: white;
+        line-height: 200%;
+    }
+    .main-footer img{
+        width: 100px;
+        margin-bottom: 10px;
+        /* display: none; */
+    }
+    footer{
+        height: 10px;
+        color: #4962bf;
+        /* background-color: white; */
+        padding-bottom: 100px;
+    }
+    .footer-services{
+        display: none;
+    }
+
+}
+@media (min-width: 900px) and (max-width: 1023px){
+    
+        .side-hero h1 {
+            font-size: 4.3rem;
+            /* color: #4962bf; */
         }
+        
+        .main-hero{
+            justify-content: center;
+        }
+        .side-hero{
+            width: 90%;
+        }
+        .n-side-about img{
+            display: none;
+        }
+        .options {
+            width: 70%;
+            font-size: 16px;
+        }
+        .image-side-about img{
+            display: none;
+        }
+        .side-about {
+            width: 90%;
+        }
+
+        .main-about{
+            width: 100%;
+        }
+
+        .card-side-services ul {
+            flex-wrap: wrap;
+            max-width: 1000px;
+            justify-content: center;
+        }
+    
+        .card-side-services li {
+            margin-bottom: 40px;
+            margin-right: 40px;
+        }
+
+        .main-contact{
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .side-contact {
+            width: 70%;
+         }
+         .ready{
+             font-size: 1.2rem;
+             font-weight: 600;
+             /* margin-top: 25px; */
+             line-height: 180%;
+             margin-bottom: 25px;
+         }
+         .ready-points{
+             font-size: 1.3rem;
+             font-weight: 600;
+             /* margin-top: 25px; */
+             line-height: 180%;
+             /* margin-top: -25px; */
+             margin-bottom: 50px;
+             
+         }
+         
+         .side-contact li h1{
+             font-size: 2.7rem;
+             margin-bottom: 30px;
+         }
+         
+         #Location{
+            display: none;
+         }
+         
+         .n-side-contact{
+            margin-top: 10px;
+         }
+         #side-contact{
+            font-size: 4.5rem;
+            margin-bottom: 100px;
+         }
+         
+
+        .main-footer img{
+            width: 150px;
+        }
+
+         
 }
 /* Default styles (for all screens) */
-.side-hero h1 {
-    font-size: 3.8rem;
-    /* color: #4962bf; */
-}
-
-.side-hero p {
-    font-size: 18px;
-    /* color: #4962bf; */
-}
 
 /* For screens 1024px to 1189px */
 @media (min-width: 1024px) and (max-width: 1189px) {
@@ -637,7 +1043,7 @@ footer{
     }
 .image-side-about img{
     margin-top: 50px;
-    height: 470px;
+    height: 480px;
 }
 
 .side-about {
@@ -907,28 +1313,6 @@ footer{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 /* For screens 1190px to 1280px */
@@ -968,14 +1352,6 @@ footer{
 .image-side-about img{
     height: 550px;
 }
-
-
-
-
-
-
-
-
 
 
     .card-side-projects ul {
@@ -1233,13 +1609,6 @@ footer{
     }
 
 
-
-
-
-
-
-
-
 }
 
 /* For screens up to 1450px */
@@ -1250,7 +1619,7 @@ footer{
     }
 
     .side-hero h1 {
-        font-size: 3.8rem;
+        font-size: 3.5rem;
     }
 
     .n-side-about img {
@@ -1261,9 +1630,6 @@ footer{
         height: 480px;
     }
 
-    .side-about h1 {
-        font-size: 3.8rem;
-    }
 
     .main-about {
         padding-top: 40px;
