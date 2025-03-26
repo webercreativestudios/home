@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: "Manrope", sans-serif;
+}
 
+body{
+    overflow-x: hidden;
+    
 }
 
 Header{
     /* position: sticky;
-    top: 0;
-    overflow: hidden; */
+    top: 0; */
+    overflow: hidden;
     background-color: white;
 }
 .navbar{
@@ -53,13 +57,13 @@ Header{
 .main-hero{
     /* max-width: 1280px; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items:center;
     min-height: calc(100vh - 180px);
 }
 
 .side-hero{
-    width: 45%;
+    width: 40%;
 }
 
 .side-hero ul{
@@ -73,7 +77,7 @@ Header{
 } 
 
 .side-hero h1{
-    font-size: 4.3rem;
+    font-size: 4.8rem ;
   
 }
 .side-hero h2{
@@ -124,9 +128,15 @@ Header{
     cursor: pointer;
 }
 
+.n-side-about img{
+    height: 500px;
+}
+
 .main-about{
     max-width: 100%;
-    padding: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     display: flex;
     justify-content: space-evenly;
     align-items:center;
@@ -138,7 +148,9 @@ Header{
     width: 40%;
  
 }
-
+.image-side-about img{
+    height: 570px;
+}
 .side-about ul{
     display: flex;
     flex-direction: column;
@@ -150,7 +162,7 @@ Header{
 } 
 
 .side-about h1{
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   
 }
 .side-about h2{
@@ -159,10 +171,21 @@ Header{
 }
 .side-about p{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 20px;
     /* margin-bottom: 25px; */
     font-size: 20px;
     font-weight: 500;
+    line-height: 155%;
+   
+}
+
+.about-list{
+    margin-top: 20px;
+}
+.progress p{
+
+    font-size: 18px;
+
    
 }
 
@@ -278,7 +301,8 @@ Header{
 
 .card-side-projects li{
     list-style: none;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     
 }
 
@@ -286,12 +310,15 @@ Header{
     max-width: 1600px;
     height: auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     
 }
 
-
+.card-project img{
+    width: 480px;
+}
 
 .card-project {
     opacity: 0;
@@ -313,6 +340,10 @@ Header{
     justify-content: space-around;
     align-items:center;
     /* min-height: calc(100vh - 250px); */
+}
+
+#side-contact{
+    font-size: 5.5rem;
 }
 
 .side-contact ul{
@@ -360,6 +391,7 @@ Header{
 }
 
 .e-p-o img{
+    width: 50px;
     margin-right: 15px;
 }
 
@@ -372,7 +404,7 @@ Header{
 }
 .email-head p{
     margin-top: 2px;
-    font-size: 1.1rem;    
+    font-size: 1.0rem;    
 }
 
 
@@ -523,7 +555,9 @@ footer{
     height: 150px;
     padding: 50px;
 }
-
+.main-footer img{
+    width: 200px;
+}
 .main-footer ul{
     display: flex;
     justify-content: space-around;
@@ -533,7 +567,7 @@ footer{
 
 .main-footer li{
     list-style: none;
-    width: 400px;
+    /* width: 400px; */
 }
 
 .main-footer h1{
@@ -544,4 +578,957 @@ footer{
     font-size: large;
     color: white;
     line-height: 200%;
+}
+
+@media (max-width: 360px){}
+@media (max-width: 480px){}
+@media (max-width: 600px){}
+@media (max-width: 768px){}
+@media (min-width: 900px) and (max-width: 1023px){
+    .side-hero h1{
+        font-size: 2.5rem ;
+        /* color: #4962bf; */
+        }
+}
+/* Default styles (for all screens) */
+.side-hero h1 {
+    font-size: 3.8rem;
+    /* color: #4962bf; */
+}
+
+.side-hero p {
+    font-size: 18px;
+    /* color: #4962bf; */
+}
+
+/* For screens 1024px to 1189px */
+@media (min-width: 1024px) and (max-width: 1189px) {
+    .side-hero {
+        width: 45%;
+    }
+
+    .options {
+        width: 70%;
+        font-size: medium;
+    }
+
+    .side-hero h1 {
+        font-size: 3.3rem;
+    }
+    .n-side-about img {
+        height:  360px;
+    }
+
+    .side-hero p {
+        font-size: 16px;
+    }
+
+    .side-about h1{
+        font-size: 4.0rem;
+      
+    }
+    .side-about p{
+        font-size: 16px;
+      
+    }
+    .progress p{
+        font-size: 15px;
+      
+    }
+.image-side-about img{
+    margin-top: 50px;
+    height: 470px;
+}
+
+.side-about {
+    width: 45%;
+}
+
+.about-list {
+    margin-top: 10px;
+}
+
+
+
+
+
+    .card-side-projects ul {
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card-side-services ul {
+        flex-wrap: wrap;
+        max-width: 1000px;
+        justify-content: center;
+    }
+
+    .card-side-services li {
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .main-contact {
+        margin-top: -30px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .side-contact ul {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+    }
+
+    .side-contact li {
+        list-style: none;
+    }
+
+    .side-contact {
+        width: 40%;
+    }
+
+    .ready {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 180%;
+        margin-bottom: 25px;
+    }
+
+    .ready-points {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 180%;
+        margin-top: -25px;
+        margin-bottom: 50px;
+    }
+
+    .side-contact li h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .e-p-o {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .e-p-o img {
+        margin-right: 15px;
+    }
+
+    .email-head {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .email-head p {
+        margin-top: 2px;
+        font-size: 1.1rem;
+    }
+
+    .n-side-contact {
+        width: 500px;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    .contact-headline {
+        width: 95%;
+        margin-top: 30px;
+        text-align: left;
+        font-family: monospace;
+    }
+
+    #callback-head {
+        padding-left: 10px;
+        font-size: 2.1rem;
+    }
+
+    #callback {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #4962bf;
+    }
+
+    .n-side-contact li {
+        list-style: none;
+        margin-top: 30px;
+    }
+
+    #name {
+        width: 160px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #name:placeholder-shown {
+        font-size: large;
+    }
+
+    #email {
+        width: 260px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #email:placeholder-shown {
+        font-size: large;
+    }
+
+    #code {
+        width: 55px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #code:placeholder-shown {
+        font-size: large;
+    }
+
+    #number {
+        width: 360px;
+        height: 30px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #number:placeholder-shown {
+        font-size: large;
+    }
+
+    #requirements {
+        width: 96%;
+        height: 150px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #requirements:placeholder-shown {
+        font-size: large;
+    }
+
+    .get-callback {
+        width: 470px;
+        height: 55px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    #Whatsapp-message {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    #Quote-message {
+        font-size: 1.1rem;
+        margin-top: 8px;
+        font-weight: 500;
+        color: #4962bf;
+    }
+
+    .whatsapp-contact {
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        background-color: #25d366;
+        width: 470px;
+        height: 55px;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-top: 70px;
+        background-color: #4962bf;
+        height: 120px;
+        padding: 50px;
+    }
+
+    .main-footer ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .main-footer li {
+        list-style: none;
+    }
+
+    .main-footer h1 {
+        font-size: 17px;
+    }
+
+    .main-footer p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+        line-height: 180%;
+    }
+
+    .main-footer img {
+        width: 150px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* For screens 1190px to 1280px */
+@media (min-width: 1190px) and (max-width: 1280px) {
+    .side-hero {
+        width: 45%;
+    }
+
+    .side-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .side-hero p {
+        font-size: 16px;
+    }
+
+    .n-side-about img {
+        height: 380px;
+    }
+
+    .side-about {
+        width: 40%;
+    }
+
+    #side-contact {
+        font-size: 4.7rem;
+    }
+
+    .side-about h1{
+        font-size: 4.5rem;
+      
+    }
+    .side-about p{
+        font-size: 16px;
+      
+    }
+.image-side-about img{
+    height: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+    .card-side-projects ul {
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card-side-services ul {
+        flex-wrap: wrap;
+        width: 1100px;
+        justify-content: center;
+    }
+
+    .card-side-services li {
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .main-contact {
+        margin-top: -30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .side-contact ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .side-contact li {
+        list-style: none;
+    }
+
+    .side-contact {
+        width: 40%;
+    }
+
+    .ready {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 180%;
+        margin-bottom: 25px;
+    }
+
+    .ready-points {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 180%;
+        margin-top: -25px;
+        margin-bottom: 50px;
+    }
+
+    .side-contact li h1 {
+        font-size: 2.0rem;
+        margin-bottom: 30px;
+    }
+
+    .e-p-o {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .e-p-o img {
+        margin-right: 15px;
+    }
+
+    .email-head {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .email-head p {
+        margin-top: 2px;
+        font-size: 1.1rem;
+    }
+
+    .n-side-contact {
+        width: 550px;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    .contact-headline {
+        width: 95%;
+        margin-top: 30px;
+        text-align: left;
+        font-family: monospace;
+    }
+
+    #callback-head {
+        padding-left: 10px;
+        font-size: 2.1rem;
+    }
+
+    #callback {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #4962bf;
+    }
+
+    .n-side-contact li {
+        list-style: none;
+        margin-top: 30px;
+    }
+
+    #name {
+        width: 190px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #name:placeholder-shown {
+        font-size: large;
+    }
+
+    #email {
+        width: 280px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #email:placeholder-shown {
+        font-size: large;
+    }
+
+    #code {
+        width: 65px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #code:placeholder-shown {
+        font-size: large;
+    }
+
+    #number {
+        width: 400px;
+        height: 30px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #number:placeholder-shown {
+        font-size: large;
+    }
+
+    #requirements {
+        width: 96%;
+        height: 150px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #requirements:placeholder-shown {
+        font-size: large;
+    }
+
+    .get-callback {
+        width: 520px;
+        height: 60px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    #Whatsapp-message {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    #Quote-message {
+        font-size: 1.1rem;
+        margin-top: 8px;
+        font-weight: 500;
+        color: #4962bf;
+    }
+
+    .whatsapp-contact {
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        background-color: #25d366;
+        width: 520px;
+        height: 60px;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-top: 70px;
+        background-color: #4962bf;
+        height: 120px;
+        padding: 50px;
+    }
+
+    .main-footer ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .main-footer li {
+        list-style: none;
+    }
+
+    .main-footer h1 {
+        font-size: 17px;
+    }
+
+    .main-footer p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+        line-height: 180%;
+    }
+
+    .main-footer img {
+        width: 150px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+/* For screens up to 1450px */
+@media (min-width: 1281px) and (max-width: 1450px) {
+    .options {
+        width: 40%;
+        font-size: large;
+    }
+
+    .side-hero h1 {
+        font-size: 3.8rem;
+    }
+
+    .n-side-about img {
+        height: 400px;
+    }
+
+    .image-side-about img {
+        height: 480px;
+    }
+
+    .side-about h1 {
+        font-size: 3.8rem;
+    }
+
+    .main-about {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .side-about {
+        width: 45%;
+    }
+
+    .side-about p {
+        font-size: 16px;
+    }
+
+    .card-side-projects ul {
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card-side-services ul {
+        flex-wrap: wrap;
+        width: 1100px;
+        justify-content: center;
+    }
+
+    .card-side-services li {
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .main-contact {
+        margin-top: -30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .side-contact ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .side-contact li {
+        list-style: none;
+    }
+
+    .side-contact {
+        width: 40%;
+    }
+
+    .ready {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 180%;
+        margin-bottom: 25px;
+    }
+
+    .ready-points {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 180%;
+        margin-top: -25px;
+        margin-bottom: 50px;
+    }
+
+    .side-contact li h1 {
+        font-size: 2.0rem;
+        margin-bottom: 30px;
+    }
+
+    .e-p-o {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .e-p-o img {
+        margin-right: 15px;
+    }
+
+    .email-head {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .email-head p {
+        margin-top: 2px;
+        font-size: 1.1rem;
+    }
+
+    .n-side-contact {
+        width: 550px;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    .contact-headline {
+        width: 95%;
+        margin-top: 30px;
+        text-align: left;
+        font-family: monospace;
+    }
+
+    #callback-head {
+        padding-left: 10px;
+        font-size: 2.1rem;
+    }
+
+    #callback {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #4962bf;
+    }
+
+    .n-side-contact li {
+        list-style: none;
+        margin-top: 30px;
+    }
+
+    #name {
+        width: 190px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #name:placeholder-shown {
+        font-size: large;
+    }
+
+    #email {
+        width: 280px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #email:placeholder-shown {
+        font-size: large;
+    }
+
+    #code {
+        width: 65px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #code:placeholder-shown {
+        font-size: large;
+    }
+
+    #number {
+        width: 400px;
+        height: 30px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #number:placeholder-shown {
+        font-size: large;
+    }
+
+    #requirements {
+        width: 96%;
+        height: 150px;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #requirements:placeholder-shown {
+        font-size: large;
+    }
+
+    .get-callback {
+        width: 520px;
+        height: 60px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    #Whatsapp-message {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    #Quote-message {
+        font-size: 1.1rem;
+        margin-top: 8px;
+        font-weight: 500;
+        color: #4962bf;
+    }
+
+    .whatsapp-contact {
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        background-color: #25d366;
+        width: 520px;
+        height: 60px;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-top: 70px;
+        background-color: #4962bf;
+        height: 120px;
+        padding: 50px;
+    }
+
+    .main-footer ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .main-footer li {
+        list-style: none;
+    }
+
+    .main-footer h1 {
+        font-size: 17px;
+    }
+
+    .main-footer p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+        line-height: 180%;
+    }
+
+    .main-footer img {
+        width: 150px;
+    }
 }
