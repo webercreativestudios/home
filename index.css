@@ -219,23 +219,20 @@ Header {
 }
 
 /* Initial state (before scrolling) */
-.image-side-about {
+/* Initially, hide the elements off-screen */
+.image-side-about, .side-about { 
     opacity: 0;
-    transform: translateX(-100px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.side-about {
-    opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    visibility: hidden; /* Ensure it's not visible until animation */
+    transition: opacity 0.8s ease-out, visibility 0s 0.8s; /* Delay visibility change */
 }
 
 /* When elements become visible */
 .show {
     opacity: 1;
-    transform: translateX(0);
+    visibility: visible; /* Only make visible when the element is in view */
+    transition: opacity 0.9s ease-in, visibility 0s 0s; /* Instant visibility change */
 }
+
 
 
 .main-services{
@@ -1173,6 +1170,12 @@ footer{
         width: 380px;
     }
 
+    .card-side-projects li{
+        list-style: none;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        
+    }
 
 
 
