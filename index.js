@@ -90,3 +90,52 @@ function toggleMenu() {
     menuToggle.classList.toggle('open');
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll('.about-list');
+  
+    // Function to animate the progress bar and the number
+    function animateProgress() {
+      progressBars.forEach(function (item) {
+        const progressLabel = item.querySelector('.progress-label');
+        const progressNumber = item.querySelector('.progress-number');
+        const progressBar = item.querySelector('.progress-bar');
+        const targetPercentage = parseInt(progressBar.getAttribute('data-progress'));
+  
+        // Check if the progress bar is already animated, to prevent re-animating
+        if (progressBar.style.width !== `${targetPercentage}%`) {
+          // Animate the progress bar width
+          progressBar.style.width = targetPercentage + '%';
+  
+          // Animate the percentage number from 0 to the target value
+          let currentValue = 0;
+          const interval = setInterval(() => {
+            if (currentValue < targetPercentage) {
+              currentValue++;
+              progressNumber.textContent = currentValue + '%';
+            } else {
+              clearInterval(interval);
+            }
+          }, 20); // Adjust speed here
+        }
+      });
+    }
+  
+    // Function to check if the element is in view
+    function checkIfInView() {
+      progressBars.forEach(function (item) {
+        const rect = item.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+  
+        // Trigger animation when element comes into view
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          item.querySelector('.progress-bar-container').style.opacity = 1; // Make progress bar visible
+          animateProgress(); // Trigger the animation
+        }
+      });
+    }
+  
+    // Listen for scroll events
+    window.addEventListener("scroll", checkIfInView);
+    checkIfInView(); // Check on page load as well
+  });
+  

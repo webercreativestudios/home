@@ -233,8 +233,37 @@ Header {
     transition: opacity 0.9s ease-in, visibility 0s 0s; /* Instant visibility change */
 }
 
-
-
+/* Progress bar container styles */
+.progress{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.progress-bar-container {
+    width: 80%;
+    background-color: white;
+    border: 1px solid gray;
+    height: 18px;
+    margin-top: 10px;
+    border-radius: 0.375rem;
+    opacity: 0; /* Initially hidden */
+  }
+  
+  /* Progress bar styles */
+  .progress-bar {
+    background-color: #42545E;
+    height: 100%;
+    width: 0%; /* Start with 0% width */
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    transition: width 2s ease-out; /* Smooth transition for width */
+  }
+  
+  /* Progress number styling */
+  .progress-number {
+    transition: all 1s ease-out; /* Smooth transition for the percentage change */
+  }
+  
 .main-services{
     margin-top: 50px;
 
