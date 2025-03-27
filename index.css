@@ -23,6 +23,7 @@ Header {
 
 .logo {
     width: 45%;
+    max-width: 855px;
 }
 
 .menu-toggle {
@@ -41,6 +42,7 @@ Header {
 
 .options {
     width: 40%;
+    max-width: 750px;
     font-size: larger;
 }
 
@@ -80,6 +82,7 @@ Header {
 
 .side-hero{
     width: 40%;
+    max-width: 750px;
 }
 
 .side-hero ul{
@@ -162,7 +165,7 @@ Header {
 
 .side-about{
     width: 40%;
- 
+    max-width: 750px;
 }
 .image-side-about img{
     height: 570px;
@@ -400,6 +403,7 @@ Header {
 }
 .side-contact {
    width: 40%;
+   max-width: 750px;
 }
 .ready{
     font-size: 1.2rem;
@@ -592,7 +596,7 @@ Header {
     margin-bottom: 50px;
 }
 footer{
-    margin-top: 70x;
+    margin-top: 70px;
     background-color: #4962bf;
     height: 150px;
     padding: 50px;
@@ -622,7 +626,7 @@ footer{
     line-height: 200%;
 }
 
-@media (min-width: 100px) and (max-width: 399px){
+@media (min-width: 1px) and (max-width: 399px){
 
 
     .what-book ul{
