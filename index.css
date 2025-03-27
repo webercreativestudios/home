@@ -130,11 +130,20 @@ Header {
     outline: none;
     border-radius: 10px;
     font-size: 1rem;
-    background-color: #18af50;
+    font-weight: 500;
+    background-color: #25d366;
     width: 150px;
     height: 50px;
     cursor: pointer;
 }
+
+
+.whatsapp:hover{
+
+    background-color: #15c254;
+
+}
+
 .b-y-c{
     color: white;
     border: none;
@@ -594,6 +603,11 @@ Header {
     height: 60px;
     cursor: pointer;
     margin-bottom: 50px;
+}
+.whatsapp-contact:hover{
+
+    background-color: #15c254;
+
 }
 footer{
     margin-top: 70px;
