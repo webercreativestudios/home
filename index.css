@@ -255,10 +255,11 @@ Header {
     width: 80%;
     background-color: white;
     border: 1px solid gray;
-    height: 18px;
+    height: 20px;
     margin-top: 10px;
-    border-radius: 0.375rem;
+    border-radius: 0.5rem;
     opacity: 0; /* Initially hidden */
+    min-width: 310px;
   }
   
   /* Progress bar styles */
