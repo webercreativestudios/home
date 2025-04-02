@@ -250,6 +250,7 @@ Header {
     width: 80%;
     display: flex;
     justify-content: space-around;
+    min-width: 310px;
 }
 .progress-bar-container {
     width: 80%;
