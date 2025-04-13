@@ -82,7 +82,7 @@ Header {
     justify-content: center;
     align-items:center;
     min-height: calc(100vh - 160px);
-    background: url('https://github.com/webercreativestudios/home/blob/main/Images/herobg.png');
+    background: url('../Images/herobg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
