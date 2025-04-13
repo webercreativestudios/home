@@ -190,13 +190,6 @@ Header {
 
 
 
-
-
-
-
-
-
-
   
   .plant-container {
     display: flex;
@@ -343,19 +336,19 @@ Header {
 }
 .progress-bar-container {
     width: 80%;
-    background-color: white;
-    border: 1px solid gray;
+    background-color: #e9ecef;
+    /* border: 1px solid gray; */
     height: 22px;
     margin-top: 10px;
     border-radius: 0.5rem;
     opacity: 0; /* Initially hidden */
     min-width: 310px;
-  }
-  
-  /* Progress bar styles */
-  .progress-bar {
-    background-color: #42545E;
+}
+
+/* Progress bar styles */
+.progress-bar {
     height: 100%;
+    background-color: #3c484e ;
     width: 0%; /* Start with 0% width */
     border-top-left-radius: 0.375rem;
     border-bottom-left-radius: 0.375rem;
@@ -1483,8 +1476,11 @@ footer{
         width: 70%;
         font-size: 16px;
     }
+    .main-about{
+        flex-direction: column;
+    }
     .image-side-about img{
-        display: none;
+       display: none;
     }
     .side-about {
         width: 90%;

@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   document.addEventListener("DOMContentLoaded", function () {
-    const words = ["Quality", "Lovely", "Creative", "Modern"];
+    const words = ["Quality", "Perfect", "Creative", "Modern"];
     const dynamicSpan = document.getElementById("dynamic-word");
 
     let wordIndex = 0;
