@@ -744,6 +744,7 @@ footer{
       .plant-image-section img {
         max-width: 270px;
         height: auto;
+        transform: translateX(-10px);
         /* padding-bottom: -50px; */
       }
 
@@ -757,7 +758,8 @@ footer{
         border-radius: 6px;
         /* margin-left: 15px; */
         cursor: pointer;
-        width: 300px;
+        width: 335px;
+ 
       }
 
     .what-book ul{
@@ -767,7 +769,9 @@ footer{
         flex-direction: row;
         justify-content: start;
         align-items: center;
-        gap: 2rem;
+        gap: 3rem;
+        /* padding-left: 10px; */
+
     }
     .whatsapp{
         color: white;
@@ -776,7 +780,7 @@ footer{
         border-radius: 10px;
         font-size: 0.9rem;
         background-color: #18af50;
-        width: 120px;
+        width: 140px;
         height: 50px;
         cursor: pointer;
     }
@@ -789,7 +793,7 @@ footer{
         border-radius: 10px;
         font-size: 0.9rem;
         background-color: black;
-        width: 170px;
+        width: 180px;
         height: 50px;
         cursor: pointer;
     }
@@ -1008,11 +1012,13 @@ footer{
 
     
     .side-hero h1 {
-        font-size: 2.1rem;
-        width: 330px;
+        /* padding-left: 10px; */
+        font-size: 2.2rem;
+        width: 344px;
         /* color: #4962bf; */
     }
     .side-hero p {
+        /* padding-left: 8px; */
         font-size: 15px;
         /* color: #4962bf; */
     }
@@ -1023,7 +1029,7 @@ footer{
     .side-hero{
         width: 100%;
         padding-left: 10px;
-        padding-right: 10px;
+        /* padding-right: 0px; */
     }
     .n-side-about img{
         display: none;
@@ -1407,7 +1413,7 @@ footer{
 
 .side-hero h1 {
     width: 400px;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     /* color: #4962bf; */
 }
 .side-hero p {
@@ -1462,7 +1468,7 @@ footer{
   
 
   .plant-image-section img {
-    max-width: 280px;
+    max-width: 300px;
     height: auto;
     transform: translateX(-10px);
   }
