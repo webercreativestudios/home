@@ -112,10 +112,19 @@ Header {
     font-size: 5rem ;
   
 }
-.cursor{
+.cursor {
+    animation: blink 1s steps(2, start) infinite;
+    color: black;
     font-weight: 100;
     font-size: larger;
-}
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
 .side-hero h2{
     /* font-size: 4.5rem; */
     margin-top: 25px;  
