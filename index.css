@@ -16,7 +16,8 @@ Header {
 
 .navbar {
     max-width: 2000px;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -81,7 +82,7 @@ Header {
     display: flex;
     justify-content: center;
     align-items:center;
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 95px);
     background: url('./Images/herobg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +207,7 @@ Header {
     /* padding: 1rem; */
     /* gap: 2rem; */
     flex-wrap: wrap;
-    background-color: #f0f9ec;
+    background-color: #f0f9ecb9;
     margin-bottom: 70px;
   }
   
@@ -321,8 +322,8 @@ Header {
 /* Initial state (before scrolling) */
 /* Initially, hide the elements off-screen */
 .image-side-about, .side-about { 
-    opacity: 0;
-    visibility: hidden; /* Ensure it's not visible until animation */
+    opacity: 1;
+    /* visibility: hidden; Ensure it's not visible until animation */
     transition: opacity 0.8s ease-out, visibility 0s 0.8s; /* Delay visibility change */
 }
 
@@ -344,7 +345,7 @@ Header {
     width: 80%;
     background-color: white;
     border: 1px solid gray;
-    height: 20px;
+    height: 22px;
     margin-top: 10px;
     border-radius: 0.5rem;
     opacity: 0; /* Initially hidden */
@@ -4177,7 +4178,7 @@ footer{
     }
 
     .image-side-about img {
-        height: 480px;
+        height: 500px;
     }
 
 

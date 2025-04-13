@@ -27,34 +27,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".image-side-about, .side-about");
-    let lastScrollTop = 0; // Variable to track the last scroll position
+// document.addEventListener("DOMContentLoaded", function () {
+//     const elements = document.querySelectorAll(".image-side-about, .side-about");
+//     let lastScrollTop = 0; // Variable to track the last scroll position
 
-    function handleScroll() {
-        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     function handleScroll() {
+//         const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        // Check if the element is in the viewport
-        elements.forEach((element) => {
-            const rect = element.getBoundingClientRect();
-            const screenHeight = window.innerHeight;
+//         // Check if the element is in the viewport
+//         elements.forEach((element) => {
+//             const rect = element.getBoundingClientRect();
+//             const screenHeight = window.innerHeight;
 
-            // If the element is in the viewport, add the 'show' class
-            if (rect.top < screenHeight - 100 && rect.bottom > 100) {
-                element.classList.add("show");
-            } else {
-                // Optionally remove the 'show' class when it goes out of view (if needed)
-                // element.classList.remove("show");
-            }
-        });
+//             // If the element is in the viewport, add the 'show' class
+//             if (rect.top < screenHeight - 100 && rect.bottom > 100) {
+//                 element.classList.add("show");
+//             } else {
+//                 // Optionally remove the 'show' class when it goes out of view (if needed)
+//                 // element.classList.remove("show");
+//             }
+//         });
 
-        // Update the last scroll position for future scroll direction check
-        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
-    }
+//         // Update the last scroll position for future scroll direction check
+//         lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
+//     }
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run once on load to check if elements are already in view
-});
+//     window.addEventListener("scroll", handleScroll);
+//     handleScroll(); // Run once on load to check if elements are already in view
+// });
 
 
 
