@@ -81,8 +81,8 @@ Header {
     display: flex;
     justify-content: center;
     align-items:center;
-    min-height: calc(100vh - 120px);
-    background: url('/Images/ChatGPT\ Image\ Apr\ 13\,\ 2025\,\ 01_56_19\ PM.png');
+    min-height: calc(100vh - 200px);
+    /* background: url('/Images/ChatGPT\ Image\ Apr\ 13\,\ 2025\,\ 01_56_19\ PM.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
