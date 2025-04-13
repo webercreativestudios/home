@@ -18,7 +18,7 @@ Header {
     max-width: 2000px;
     padding: 20px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
 }
 
@@ -79,17 +79,17 @@ Header {
     /* padding-left: 50px;
     padding-right: 50px; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
     min-height: calc(100vh - 120px);
-    /* background: url('/Images/banner-bg.png');
-    background-size: contain;
-    background-repeat: no-repeat; */
+    background: url('/Images/ChatGPT\ Image\ Apr\ 13\,\ 2025\,\ 01_56_19\ PM.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .side-hero{
-    /* width: 45%; */
-    max-width: 750px;
+    width: 45%;
+    max-width: 800px;
 }
 
 .side-hero ul{
@@ -102,9 +102,19 @@ Header {
 
 } 
 
+#dynamic-word {
+    /* font-weight: bold; */
+    transition: all 0.3s ease;
+}
+
 .side-hero h1{
-    font-size: 4.0rem ;
+    /* font-weight: 800; */
+    font-size: 5rem ;
   
+}
+.cursor{
+    font-weight: 100;
+    font-size: larger;
 }
 .side-hero h2{
     /* font-size: 4.5rem; */
@@ -115,7 +125,7 @@ Header {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 19px;
-   font-weight: 600;
+   font-weight: 400;
 }
 
 .what-book ul{
@@ -157,7 +167,7 @@ Header {
     outline: none;
     border-radius: 10px;
     font-size: 1rem;
-    background-color: black;
+    background-color:#4962bf;
     width: 200px;
     height: 50px;
     cursor: pointer;
@@ -183,6 +193,7 @@ Header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    /* margin-top: 70px; */
     /* padding: 1rem; */
     /* gap: 2rem; */
     flex-wrap: wrap;
@@ -211,10 +222,11 @@ Header {
     background-color: #1c482c;
     color: #fff;
     padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    width: 300px;
   }
   
   .plant-image-section img {
@@ -745,7 +757,7 @@ footer{
         border-radius: 6px;
         /* margin-left: 15px; */
         cursor: pointer;
-        width: 330px;
+        width: 300px;
       }
 
     .what-book ul{
@@ -753,8 +765,9 @@ footer{
         margin-top: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
+        gap: 2rem;
     }
     .whatsapp{
         color: white;
@@ -995,7 +1008,8 @@ footer{
 
     
     .side-hero h1 {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
+        width: 330px;
         /* color: #4962bf; */
     }
     .side-hero p {
@@ -1007,7 +1021,9 @@ footer{
         justify-content: center;
     }
     .side-hero{
-        width: 90%;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .n-side-about img{
         display: none;
@@ -1141,8 +1157,9 @@ footer{
     margin-top: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    gap: 1.5rem;
 }
 .whatsapp{
     color: white;
@@ -1163,7 +1180,7 @@ footer{
     outline: none;
     border-radius: 10px;
     font-size: 1rem;
-    background-color: black;
+    background-color:black;
     width: 200px;
     height: 50px;
     cursor: pointer;
@@ -1389,6 +1406,7 @@ footer{
 
 
 .side-hero h1 {
+    width: 400px;
     font-size: 2.5rem;
     /* color: #4962bf; */
 }
@@ -1398,10 +1416,12 @@ footer{
 }
 
 .main-hero{
-    justify-content: center;
+    justify-content: start;
 }
 .side-hero{
-    width: 90%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .n-side-about img{
     display: none;
@@ -1444,7 +1464,7 @@ footer{
   .plant-image-section img {
     max-width: 280px;
     height: auto;
-    padding-bottom: -50px;
+    transform: translateX(-10px);
   }
 
   .plant-container button {
@@ -1820,7 +1840,8 @@ footer{
 
     
     .side-hero h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
+        width: 460px;
         /* color: #4962bf; */
     }
     .side-hero p {
@@ -1833,6 +1854,7 @@ footer{
     }
     .side-hero{
         width: 90%;
+
     }
     .n-side-about img{
         display: none;
@@ -1848,6 +1870,7 @@ footer{
         width: 90%;
     }
     .side-about h1{
+
        font-size: 3.5rem;
     }
     .side-about p{
@@ -3009,7 +3032,8 @@ footer{
 /* For screens 1024px to 1189px */
 @media (min-width: 1024px) and (max-width: 1189px) {
     .side-hero {
-        width: 45%;
+        padding-left: 20px;
+
     }
 
     .options {
@@ -3018,6 +3042,7 @@ footer{
     }
 
     .side-hero h1 {
+        width: 750px;
         font-size: 3.2rem;
     }
     .n-side-about img {
@@ -3352,7 +3377,7 @@ footer{
 /* For screens 1190px to 1280px */
 @media (min-width: 1190px) and (max-width: 1280px) {
     .side-hero {
-        width: 45%;
+        width: 47%;
     }
 
     .side-hero h1 {
@@ -3688,9 +3713,13 @@ footer{
         width: 40%;
         font-size: large;
     }
-
+    .side-hero{
+        padding: 30px;
+        width: 720px;
+    }
     .side-hero h1 {
-        font-size: 3.5rem;
+        width: 95%;
+        font-size: 4rem;
     }
 
     .n-side-about img {

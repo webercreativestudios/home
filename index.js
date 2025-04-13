@@ -138,4 +138,45 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkIfInView);
     checkIfInView(); // Check on page load as well
   });
+
   
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const words = ["Quality", "Elegant", "Creative", "Modern"];
+    const dynamicSpan = document.getElementById("dynamic-word");
+
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+
+      if (isDeleting) {
+        charIndex--;
+        dynamicSpan.textContent = currentWord.substring(0, charIndex);
+      } else {
+        charIndex++;
+        dynamicSpan.textContent = currentWord.substring(0, charIndex);
+      }
+
+      let typingSpeed = isDeleting ? 60 : 100;
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        typingSpeed = 1500;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typingSpeed = 500;
+      }
+
+      setTimeout(typeEffect, typingSpeed);
+    }
+
+    // Start animation
+    typeEffect();
+  });
+
