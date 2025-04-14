@@ -263,6 +263,9 @@ Header {
 .image-side-about img{
     height: 570px;
 }
+.image-side-about2 img{
+    display: none;
+}
 .side-about ul{
     display: flex;
     flex-direction: column;
@@ -1045,8 +1048,18 @@ footer{
         width: 70%;
         font-size: 16px;
     }
+    .main-about{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
     .image-side-about img{
         display: none;
+    }
+    .image-side-about2 img{
+        display: block;
+        width: 300px;
+        margin-bottom: 50px;
     }
     .side-about {
         width: 90%;
@@ -1481,8 +1494,18 @@ footer{
     .main-about{
         flex-direction: column;
     }
+    .main-about{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
     .image-side-about img{
-       display: none;
+        display: none;
+    }
+    .image-side-about2 img{
+        display: block;
+        width: 330px;
+        margin-bottom: 50px;
     }
     .side-about {
         width: 90%;
@@ -1879,8 +1902,19 @@ footer{
     width: 70%;
     font-size: 16px;
 }
+
+.main-about{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
 .image-side-about img{
     display: none;
+}
+.image-side-about2 img{
+    display: block;
+    width: 380px;
+    margin-bottom: 50px;
 }
 .side-about {
     width: 90%;
@@ -2312,8 +2346,18 @@ footer{
         width: 70%;
         font-size: 16px;
     }
+    .main-about{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
     .image-side-about img{
         display: none;
+    }
+    .image-side-about2 img{
+        display: block;
+        width: 420px;
+        margin-bottom: 50px;
     }
     .side-about {
         width: 90%;
@@ -2456,6 +2500,7 @@ footer{
 
 
 @media (min-width: 500px) and (max-width: 549px){
+
     .contact-headline {
         width: 95%;
         margin-top: 30px;
@@ -2656,7 +2701,7 @@ footer{
 
     
     .side-hero h1 {
-        font-size: 3.2rem;
+        font-size: 2.9rem;
         /* color: #4962bf; */
     }
     .side-hero p {
@@ -2666,6 +2711,7 @@ footer{
     
     .main-hero{
         justify-content: center;
+        
     }
     .side-hero{
         width: 90%;
@@ -2677,8 +2723,21 @@ footer{
         width: 70%;
         font-size: 16px;
     }
+    .main-about{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center
+    }
     .image-side-about img{
         display: none;
+    }
+    .image-side-about2 img{
+        display: flex;
+        width: 490px;
+        margin-bottom: 50px;
     }
     .side-about {
         width: 90%;
@@ -2694,6 +2753,7 @@ footer{
     .plant-container {
         /* padding: 3rem; */
         flex-direction: column;
+        overflow: hidden;
     }
     .plant-container h1 {
         color: #1c482c;
@@ -2729,9 +2789,6 @@ footer{
       }
 
 
-    .main-about{
-        width: 100%;
-    }
 
     .card-side-services ul {
         flex-wrap: wrap;
@@ -3051,23 +3108,38 @@ footer{
         width: 70%;
         font-size: 16px;
     }
+    .main-about{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center
+    }
     .image-side-about img{
         display: none;
     }
+    .image-side-about2 img{
+        display: flex;
+        width: 549px;
+        margin-bottom: 50px;
+    }
     .side-about {
         width: 90%;
+        max-width: 500px;
     }
     .side-about h1{
        font-size: 3.5rem;
     }
     .side-about p{
-       font-size: 17px;
+       font-size: 18px;
     }
 
 
     .plant-container {
         /* padding: 3rem; */
         flex-direction: column;
+        
     }
     .plant-container h1 {
         color: #1c482c;
@@ -3075,10 +3147,11 @@ footer{
         font-size: 2.3rem;
         line-height: 1.4;
         margin-bottom: 1.5rem;
+        
       }
       .plant-container p {
         color: #1c482c;
-        max-width: 400px;
+        max-width: 450px;
         font-size: 1rem;
     
       }
@@ -3087,7 +3160,6 @@ footer{
       .plant-image-section img {
         max-width: 300px;
         height: auto;
-        padding-bottom: -50px;
       }
 
       .plant-container button {
@@ -3099,7 +3171,7 @@ footer{
         border-radius: 6px;
         /* margin-left: 15px; */
         cursor: pointer;
-        width: 410px;
+        width: 420px;
       }
 
 
@@ -3219,11 +3291,22 @@ footer{
         width: 70%;
         font-size: 16px;
     }
+    .main-about{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center
+    }
     .image-side-about img{
-        display: none;
+        display: flex;
+        width: 620px;
+        margin-bottom: 50px;
     }
     .side-about {
         width: 90%;
+        padding: 20px;
     }
 
     .plant-container {
@@ -3262,10 +3345,6 @@ footer{
         width: 500px;
       }
 
-
-    .main-about{
-        width: 100%;
-    }
 
     .card-side-services ul {
         flex-wrap: wrap;
