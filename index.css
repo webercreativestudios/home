@@ -8,9 +8,8 @@ body{
     overflow-x: hidden;
     background: url('./Images/space-star.jpg');
     background-size: contain;
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
     color: white;
-    image-rendering: auto;
 }
 
 header {
@@ -1232,7 +1231,7 @@ footer{
         /* margin-bottom: 1.5rem; */
       }
       .plant-container p {
-        color: #1c482c;
+        /* color: #1c482c; */
         max-width: 300px;
         font-size: 0.9rem;
     
