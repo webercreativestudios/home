@@ -344,7 +344,7 @@ Header {
     margin-top: 10px;
     border-radius: 0.5rem;
     opacity: 0; /* Initially hidden */
-    min-width: 310px;
+    min-width: 320px;
 }
 
 /* Progress bar styles */
