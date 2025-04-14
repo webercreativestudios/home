@@ -6,10 +6,14 @@
 
 body{
     overflow-x: hidden;
+    background: url('./Images/space.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    color: white;
     
 }
 
-Header {
+header {
     overflow: hidden;
     /* background: linear-gradient(to right, #E6E7F6 16%, #F0EEF7 19%, #E6E7F6 37%,#F0EEF7 39%, #FBF8F7 50%, #FBF8F7 100%); */
 
@@ -21,8 +25,10 @@ Header {
 
 .navbar {
     max-width: 2000px;
-    padding-left: 20px;
+    /* padding-bottom: 20px; */
+    padding-left: 40px;
     padding-right: 20px;
+
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -44,7 +50,7 @@ Header {
 .bar {
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -62,6 +68,7 @@ Header {
 }
 
 .options ul li {
+    color: white;
     list-style: none;
     cursor: pointer;
 }
@@ -89,16 +96,15 @@ Header {
     display: flex;
     justify-content: center;
     align-items:center;
-    min-height: calc(100vh - 95px);
+    min-height: calc(100vh - 250px);
     max-height: 900px;
-    background: url('./Images/herobg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    color: white;
+
 }
 
 .side-hero{
-    width: 45%;
-    max-width: 800px;
+    /* width: 45%; */
+    max-width: 900px;
 }
 
 .side-hero ul{
@@ -118,12 +124,12 @@ Header {
 
 .side-hero h1{
     /* font-weight: 800; */
-    font-size: 4.3rem ;
+    font-size: 5rem ;
   
 }
 .cursor {
     animation: blink 1s steps(2, start) infinite;
-    color: black;
+    color: white;
     font-weight: 100;
     font-size: larger;
   }
@@ -185,7 +191,7 @@ Header {
     outline: none;
     border-radius: 10px;
     font-size: 1rem;
-    background-color:black;
+    background-color:#4962bf;
     width: 200px;
     height: 50px;
     cursor: pointer;
@@ -209,7 +215,7 @@ Header {
     /* padding: 1rem; */
     /* gap: 2rem; */
     flex-wrap: wrap;
-    background-color: #f0f9ecb9;
+    /* background-color: #f0f9ecb9; */
     margin-bottom: 70px;
   }
   
@@ -218,14 +224,16 @@ Header {
   }
   
   .plant-container h1 {
-    color: #1c482c;
+    /* color: #1c482c; */
+    color: white;
     font-size: 3.1rem;
     line-height: 1.4;
     margin-bottom: 1.5rem;
   }
   
   .plant-container p {
-    color: #1c482c;
+    color: white;
+    /* color: #1c482c; */
     font-size: 1.1rem;
     margin-bottom: 2rem;
   }
@@ -258,10 +266,11 @@ Header {
     margin-bottom: 100px;
     padding-top: 70px;
     padding-bottom: 70px;
-    color: #1f2732;
+    color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
+    gap: 6rem;
     /* background-color: #4963bf0a; */
     /* min-height: calc(100vh - 250px); */
 }
@@ -272,6 +281,7 @@ Header {
 }
 .image-side-about img{
     height: 600px;
+    border-radius: 30px;
 }
 .image-side-about2 img{
     display: none;
@@ -614,11 +624,15 @@ Header {
     padding: 5px;
     padding-left: 10px;
     font-size: larger;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
 } 
 
 #name:placeholder-shown{
     font-size: larger;
-    
+    color: white;
 }
 
 #email{
@@ -627,6 +641,9 @@ Header {
     /* padding: 5px; */
     padding-left: 10px;
     font-size: larger;
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
 }
 #email:placeholder-shown{
     font-size: larger;
@@ -639,6 +656,9 @@ Header {
     padding: 5px;
     padding-left: 10px;
     font-size: larger;
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
 } 
 
 #code:placeholder-shown{
@@ -652,6 +672,9 @@ Header {
     padding: 5px;
     padding-left: 10px;
     font-size: larger;
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
 } 
 
 #number:placeholder-shown{
@@ -666,6 +689,9 @@ Header {
     padding: 5px;
     padding-left: 10px;
     font-size: larger;
+    border: 1px solid white;
+    outline: none;
+    background-color: black;
 } 
 
 #requirements:placeholder-shown{
@@ -678,9 +704,10 @@ Header {
     font-size: 1.3rem;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: black;
+    background-color:#4962bf;
     color: white;
     border-radius: 15px;
+    border: none;
     cursor: pointer;
 }
 
@@ -1669,8 +1696,7 @@ footer{
     outline: none;
     border-radius: 10px;
     font-size: 1rem;
-    background-color:black;
-    width: 200px;
+    width: 190px;
     height: 50px;
     cursor: pointer;
 }
@@ -1783,7 +1809,6 @@ footer{
     font-size: 1.2rem;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: black;
     color: white;
     border-radius: 15px;
     cursor: pointer;
@@ -1901,6 +1926,7 @@ footer{
 }
 .side-hero p {
     font-size: 16px;
+    font-weight: 500;
     /* color: #4962bf; */
 }
 
@@ -1909,8 +1935,8 @@ footer{
 }
 .side-hero{
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 18px;
+    /* padding-right: 10px; */
 }
 .n-side-about img{
     display: none;
@@ -1937,24 +1963,26 @@ footer{
     width: 90%;
 }
 .side-about h1{
-   font-size: 3.5rem;
+   font-size: 3.2rem;
 }
 .side-about p{
    font-size: 15px;
 }
 .plant-container {
+
     padding: 1rem;
     flex-direction: column;
 }
 .plant-container h1 {
-    color: #1c482c;
+    margin-top: 30px;
+    /* color: #1c482c; */
     padding-top: 3rem;
     font-size: 2rem;
     line-height: 1.4;
     margin-bottom: 1.5rem;
   }
   .plant-container p {
-    color: #1c482c;
+    /* color: #1c482c; */
     max-width: 400px;
     font-size: 1rem;
 
@@ -2095,7 +2123,7 @@ footer{
         outline: none;
         border-radius: 10px;
         font-size: 1rem;
-        background-color: black;
+        /* background-color: black; */
         width: 200px;
         height: 50px;
         cursor: pointer;
@@ -2209,7 +2237,7 @@ footer{
         font-size: 1.2rem;
         font-weight: 500;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: black;
+        /* background-color: black; */
         color: white;
         border-radius: 15px;
         cursor: pointer;
@@ -2361,7 +2389,6 @@ footer{
         width: 90%;
     }
     .side-about h1{
-
        font-size: 3.5rem;
     }
     .side-about p{
@@ -2374,14 +2401,14 @@ footer{
         flex-direction: column;
     }
     .plant-container h1 {
-        color: #1c482c;
+        /* color: #1c482c; */
         padding-top: 3rem;
         font-size: 2.3rem;
         line-height: 1.4;
         margin-bottom: 1.5rem;
       }
       .plant-container p {
-        color: #1c482c;
+        /* color: #1c482c; */
         max-width: 400px;
         font-size: 1rem;
     
@@ -2396,7 +2423,7 @@ footer{
 
 
       .plant-container button {
-        background-color: #1c482c;
+        /* background-color: #1c482c; */
         color: #fff;
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
@@ -2592,7 +2619,7 @@ footer{
         font-size: 1.3rem;
         font-weight: 500;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: black;
+        /* background-color: black; */
         color: white;
         border-radius: 15px;
         cursor: pointer;
@@ -2754,16 +2781,16 @@ footer{
         overflow: hidden;
     }
     .plant-container h1 {
-        color: #1c482c;
+        /* color: #1c482c; */
         padding-top: 3rem;
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         line-height: 1.4;
         margin-bottom: 1.5rem;
       }
       .plant-container p {
-        color: #1c482c;
+        /* color: #1c482c; */
         max-width: 400px;
-        font-size: 1rem;
+        font-size: 1.02rem;
     
       }
       
@@ -2883,8 +2910,9 @@ footer{
 
 
 @media (min-width: 550px) and (max-width: 699px){
-
-
+.navbar{
+    margin-left: 30px;
+}
     .contact-headline {
         width: 95%;
         margin-top: 30px;
@@ -2978,7 +3006,7 @@ footer{
         font-size: 1.3rem;
         font-weight: 500;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: black;
+        /* background-color: black; */
         color: white;
         border-radius: 15px;
         cursor: pointer;
@@ -3140,17 +3168,17 @@ footer{
         
     }
     .plant-container h1 {
-        color: #1c482c;
+        /* color: #1c482c; */
         padding-top: 3rem;
-        font-size: 2.3rem;
+        font-size: 2.7rem;
         line-height: 1.4;
         margin-bottom: 1.5rem;
         
       }
       .plant-container p {
-        color: #1c482c;
+        /* color: #1c482c; */
         max-width: 450px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     
       }
       
@@ -3161,7 +3189,7 @@ footer{
       }
 
       .plant-container button {
-        background-color: #1c482c;
+        /* background-color: #1c482c; */
         color: #fff;
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
@@ -3298,7 +3326,7 @@ footer{
         justify-content: center
     }
     .image-side-about img{
-        display: flex;
+        display: none;
         width: 620px;
         margin-bottom: 50px;
     }
@@ -3468,7 +3496,7 @@ footer{
             justify-content: center
         }
         .image-side-about img{
-            display: flex;
+            display: none;
             width: 700px;
             height: auto;
             margin-bottom: 50px;
@@ -3485,7 +3513,7 @@ footer{
         }
 
         .plant-container h1 {
-            color: #1c482c;
+            /* color: #1c482c; */
             font-size: 2rem;
             line-height: 1.4;
             margin-bottom: 1.5rem;
@@ -3493,13 +3521,13 @@ footer{
         }
         .plant-container p {
               padding-left: 20px;
-              color: #1c482c;
+              /* color: #1c482c; */
               font-size: 1rem;
               width: 400px;
             }
             .plant-container button {
               margin-left: 20px;
-            background-color: #1c482c;
+            /* background-color: #1c482c; */
             color: #fff;
             padding: 0.8rem 1.5rem;
             font-size: 1rem;
@@ -3591,11 +3619,12 @@ footer{
     }
 
     .side-hero h1 {
-        width: 750px;
-        font-size: 3.2rem;
+        width: 800px;
+        font-size: 4.1rem;
     }
     .n-side-about img {
         height:  360px;
+        
     }
 
     .side-hero p {
@@ -3615,7 +3644,7 @@ footer{
       
     }
 .image-side-about img{
-    width: 550px;
+    width: 450px;
     margin-top: 50px;
     height: auto;
 }
@@ -3856,7 +3885,7 @@ footer{
         font-size: 1.3rem;
         font-weight: 500;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: black;
+        /* background-color: black; */
         color: white;
         border-radius: 15px;
         cursor: pointer;
@@ -3926,12 +3955,13 @@ footer{
 
 /* For screens 1190px to 1280px */
 @media (min-width: 1190px) and (max-width: 1280px) {
-    .side-hero {
-        width: 47%;
+    .options {
+        width: 70%;
+        font-size: medium;
     }
 
     .side-hero h1 {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
 
     .side-hero p {
@@ -3952,13 +3982,13 @@ footer{
         padding: 1rem;
         /* gap: 2rem; */
         flex-wrap: wrap;
-        background-color: #f0f9ec;
+        /* background-color: #f0f9ec; */
         margin-bottom: 70px;
       }
       
       .plant-container h1 {
-        color: #1c482c;
-        font-size: 2.5rem;
+        /* color: #1c482c; */
+        font-size: 2.8rem;
         line-height: 1.4;
         margin-bottom: 1.5rem;
       }
@@ -4196,7 +4226,7 @@ footer{
         font-size: 1.3rem;
         font-weight: 500;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: black;
+        /* background-color: black; */
         color: white;
         border-radius: 15px;
         cursor: pointer;
@@ -4275,8 +4305,8 @@ footer{
         /* width: 720px; */
     }
     .side-hero h1 {
-        width: 95%;
-        font-size: 3.5rem;
+        /* width: 95%; */
+        font-size: 4.5rem;
     }
     .side-hero p {
         font-size: 17px;
@@ -4499,7 +4529,7 @@ footer{
         font-size: 1.3rem;
         font-weight: 500;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: black;
+        /* background-color: black; */
         color: white;
         border-radius: 15px;
         cursor: pointer;
