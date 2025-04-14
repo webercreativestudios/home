@@ -11,7 +11,7 @@ body{
 
 Header {
     overflow: hidden;
-    background: linear-gradient(to right, #E6E7F6 16%, #F0EEF7 19%, #E6E7F6 37%,#F0EEF7 39%, #FBF8F7 50%, #FBF8F7 100%);
+    /* background: linear-gradient(to right, #E6E7F6 16%, #F0EEF7 19%, #E6E7F6 37%,#F0EEF7 39%, #FBF8F7 50%, #FBF8F7 100%); */
 
 
     /* background: url('./Images/Screenshot\ 2025-04-14\ 155105.png');
