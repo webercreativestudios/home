@@ -75,7 +75,7 @@ Header {
 
 
 .main-hero{
-    /* max-width: 1280px; */
+    max-width: 2000px;
     width: 100%;
     /* padding-left: 50px;
     padding-right: 50px; */
@@ -83,6 +83,7 @@ Header {
     justify-content: center;
     align-items:center;
     min-height: calc(100vh - 95px);
+    max-height: 900px;
     background: url('./Images/herobg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -177,7 +178,7 @@ Header {
     outline: none;
     border-radius: 10px;
     font-size: 1rem;
-    background-color:#4962bf;
+    background-color:black;
     width: 200px;
     height: 50px;
     cursor: pointer;
@@ -192,6 +193,7 @@ Header {
 
   
   .plant-container {
+    max-width: 2000px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -243,7 +245,8 @@ Header {
 
 
 .main-about{
-    max-width: 100%;
+    max-width: 2000px;
+    width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
     padding-top: 70px;
@@ -261,7 +264,7 @@ Header {
     max-width: 750px;
 }
 .image-side-about img{
-    height: 570px;
+    height: 600px;
 }
 .image-side-about2 img{
     display: none;
@@ -278,7 +281,7 @@ Header {
 
 .side-about h1{
     font-size: 4.5rem;
-    font-weight: 800;
+    font-weight: 800 !important;
     font-family: "Manrope", sans-serif;
 }
 .side-about h2{
@@ -289,7 +292,7 @@ Header {
     width: 100%;
     margin-top: 20px;
     /* margin-bottom: 25px; */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 155%;
    
@@ -368,7 +371,7 @@ Header {
   
 .main-services{
     margin-top: 100px;
-
+    max-width: 2000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -430,6 +433,7 @@ Header {
 
 
 .main-project{
+    max-width: 2000px;
     margin-top: 80px;
     display: flex;
     justify-content: center;
@@ -479,7 +483,7 @@ Header {
 
 
 .main-contact{
-    margin-top: -30px;
+    max-width: 2000px;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -522,6 +526,7 @@ Header {
 }
 
 .side-contact li h1{
+    
     font-size: 2.7rem;
     margin-bottom: 30px;
 }
@@ -554,6 +559,7 @@ Header {
 
 
 .n-side-contact{
+    
     width: 600px;
     height: auto;
     margin-top: 100px;
@@ -567,6 +573,7 @@ Header {
     /* justify-content: space-evenly; */
 }
 .contact-headline{
+    
     width: 95%;
     margin-top: 50px;
     text-align: left;
@@ -700,6 +707,7 @@ Header {
 
 }
 footer{
+    max-width: 2000px;
     margin-top: 70px;
     background-color: #4962bf;
     height: 150px;
@@ -818,6 +826,7 @@ footer{
         width: 325px;
      }
      #side-contact{
+        
         font-size: 2.1rem;
         margin-bottom: 100px;
      }
@@ -2050,25 +2059,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 465px) and (max-width: 499px){
 
     .what-book ul{
@@ -3088,7 +3078,7 @@ footer{
 
     
     .side-hero h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         /* color: #4962bf; */
     }
     .side-hero p {
@@ -3462,39 +3452,62 @@ footer{
             width: 70%;
             font-size: 16px;
         }
+        .main-about{
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-direction: column;
+            overflow: hidden;
+            justify-content: center
+        }
         .image-side-about img{
-            display: none;
+            display: flex;
+            width: 700px;
+            height: auto;
+            margin-bottom: 50px;
+        }
+        .image-side-about2 img{
+
         }
         .side-about {
             width: 90%;
         }
         
+        .plant-container{
 
+        }
 
         .plant-container h1 {
             color: #1c482c;
-            font-size: 2.7rem;
+            font-size: 2rem;
             line-height: 1.4;
             margin-bottom: 1.5rem;
-          }
-          .plant-container p {
-            color: #1c482c;
+            padding-left: 20px;
+        }
+        .plant-container p {
+              padding-left: 20px;
+              color: #1c482c;
+              font-size: 1rem;
+              width: 400px;
+            }
+            .plant-container button {
+              margin-left: 20px;
+            background-color: #1c482c;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
             font-size: 1rem;
-        
+            border: none;
+            border-radius: 6px;
+            /* margin-left: 15px; */
+            cursor: pointer;
+            width: 300px;
           }
-          
         
           .plant-image-section img {
             max-width: 300px;
             height: auto;
           }
 
-
-        .main-about{
-            margin-top: 100px;
-            margin-bottom: 70px;
-            width: 100%;
-        }
 
         .card-side-services ul {
             flex-wrap: wrap;
@@ -3583,7 +3596,7 @@ footer{
     }
 
     .side-about h1{
-        font-size: 4.0rem;
+        font-size: 3.5rem;
       
     }
     .side-about p{
@@ -3595,8 +3608,9 @@ footer{
       
     }
 .image-side-about img{
+    width: 550px;
     margin-top: 50px;
-    height: 470px;
+    height: auto;
 }
 
 .plant-container {
@@ -3918,7 +3932,7 @@ footer{
     }
 
     .n-side-about img {
-        height: 380px;
+        width: 380px;
     }
 
 
@@ -3936,9 +3950,13 @@ footer{
       
       .plant-container h1 {
         color: #1c482c;
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1.4;
         margin-bottom: 1.5rem;
+      }
+      .plant-container p {
+        font-size: 16x;
+        width: 500px;
       }
       
 
@@ -3963,11 +3981,11 @@ footer{
     }
 
     #side-contact {
-        font-size: 4.7rem;
+        font-size: 4rem;
     }
 
     .side-about h1{
-        font-size: 4.5rem;
+        font-size: 4rem;
       
     }
     .side-about p{
@@ -3975,7 +3993,9 @@ footer{
       
     }
 .image-side-about img{
-    height: 550px;
+    margin-top: 50px;
+    width: 600px;
+    height: auto;
 }
 
 
@@ -4255,9 +4275,12 @@ footer{
         height: 400px;
     }
 
-    .image-side-about img {
-        height: 500px;
+    .image-side-about img{
+        margin-top: 50px;
+        width: 620px;
+        height: auto;
     }
+    
 
 
 
@@ -4269,6 +4292,7 @@ footer{
     .side-about {
         width: 45%;
     }
+
 
     .side-about p {
         font-size: 16px;
