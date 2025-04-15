@@ -10,7 +10,7 @@ body{
     background-size: 70%;
     /* background-repeat: repeat; */
     color: white;
-    resize: both;
+    /* resize: both; */
 }
 
 header {
@@ -26,7 +26,7 @@ header {
 .navbar {
     max-width: 2000px;
     /* padding-bottom: 20px; */
-    padding-left: 40px;
+    padding-left: 20px;
     padding-right: 20px;
 
     display: flex;
@@ -96,9 +96,10 @@ header {
     display: flex;
     justify-content: center;
     align-items:center;
-    min-height: calc(100vh - 300px);
+    min-height: calc(100vh - 200px);
     max-height: 900px;
     color: white;
+    /* text-align: center; */
 
 }
 
@@ -124,7 +125,7 @@ header {
 
 .side-hero h1{
     /* font-weight: 800; */
-    font-size: 5rem ;
+    font-size: 5.5rem ;
   
 }
 .cursor {
@@ -145,6 +146,7 @@ header {
     margin-top: 25px;  
 }
 .side-hero p{
+    
     width: 90%;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -157,8 +159,9 @@ header {
     margin-top: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    /* gap: 1rem; */
 }
 
 .what-book li{
@@ -2750,6 +2753,7 @@ footer{
     
     .main-hero{
         justify-content: center;
+        padding-left: 20px;
         
     }
     .side-hero{
@@ -2764,6 +2768,7 @@ footer{
     }
     .main-about{
         width: 100%;
+        padding-left: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
         flex-direction: column;
@@ -3130,7 +3135,7 @@ footer{
 
     
     .side-hero h1 {
-        font-size: 3rem;
+        font-size: 3.2rem;
         /* color: #4962bf; */
     }
     .side-hero p {
@@ -3139,7 +3144,8 @@ footer{
     }
     
     .main-hero{
-        justify-content: center;
+        /* justify-content: center; */
+        padding-left: 20px;
     }
     .side-hero{
         width: 90%;
@@ -3157,7 +3163,8 @@ footer{
         margin-bottom: 20px;
         flex-direction: column;
         overflow: hidden;
-        justify-content: center
+        justify-content: center;
+        padding-left: 20px;
     }
     .image-side-about img{
         display: none;
@@ -3320,8 +3327,8 @@ footer{
     }
 
     .main-hero{
-        justify-content: center;   
-    
+        /* justify-content: center;    */
+        padding-left: 40px;
     }
     .side-hero h1 {
         font-size: 4rem;
@@ -3330,6 +3337,7 @@ footer{
     
     .side-hero{
         width: 90%;
+        /* padding-left: 40px; */
     }
     .n-side-about img{
         display: none;
@@ -3339,6 +3347,7 @@ footer{
         font-size: 16px;
     }
     .main-about{
+        padding-left: 40px;
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -3361,14 +3370,14 @@ footer{
         flex-direction: column;
     }
     .plant-container h1 {
-        color: #1c482c;
+        /* color: #1c482c; */
         padding-top: 3rem;
-        font-size: 2.6rem;
+        font-size: 3rem;
         line-height: 1.4;
         margin-bottom: 1.5rem;
       }
       .plant-container p {
-        color: #1c482c;
+        /* color: #1c482c; */
         font-size: 1rem;
         
       }
@@ -3381,7 +3390,7 @@ footer{
       }
 
       .plant-container button {
-        background-color: #1c482c;
+        /* background-color: #1c482c; */
         color: #fff;
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
@@ -3389,7 +3398,7 @@ footer{
         border-radius: 6px;
         /* margin-left: 15px; */
         cursor: pointer;
-        width: 500px;
+        width: 520px;
       }
 
 
@@ -3488,18 +3497,23 @@ footer{
 @media (min-width: 900px) and (max-width: 1023px){
     
         .side-hero h1 {
-            font-size: 4.3rem;
+            font-size: 4.2rem;
             /* color: #4962bf; */
+        }
+        .side-hero p {
+            width: 85%;
         }
         
         .main-hero{
-            justify-content: center;
+            /* justify-content: center; */
+            padding-left: 70px;
             /* min-height: calc(100vh - 40vh); */
 
 
         }
         .side-hero{
             width: 90%;
+            
         }
         .n-side-about img{
             display: none;
@@ -3630,7 +3644,7 @@ footer{
 /* For screens 1024px to 1189px */
 @media (min-width: 1024px) and (max-width: 1189px) {
     .side-hero {
-        padding-left: 20px;
+        padding-left: 100px;
 
     }
 
@@ -3640,8 +3654,8 @@ footer{
     }
 
     .side-hero h1 {
-        width: 800px;
-        font-size: 4.1rem;
+        /* width: 800px; */
+        font-size: 4.4rem;
     }
     .n-side-about img {
         height:  360px;
@@ -3650,6 +3664,7 @@ footer{
 
     .side-hero p {
         font-size: 16px;
+        width: 80%;
     }
 
     .side-about h1{
@@ -3987,13 +4002,16 @@ footer{
 
     .side-hero p {
         font-size: 16px;
+        width: 80%;
     }
 
     .n-side-about img {
         height: 380px;
         width: auto;
     }
-
+    .side-hero {
+        padding-left: 100px;
+    }
 
     .plant-container {
         display: flex;
@@ -4322,15 +4340,16 @@ footer{
         font-size: large;
     }
     .side-hero{
-        /* padding: 30px; */
+        padding-left: 100px;
         /* width: 720px; */
     }
     .side-hero h1 {
         /* width: 95%; */
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
     .side-hero p {
         font-size: 17px;
+        width: 80%;
     }
 
     .n-side-about img {
