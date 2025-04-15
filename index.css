@@ -645,6 +645,7 @@ header {
     /* padding: 5px; */
     padding-left: 10px;
     font-size: larger;
+    color: white;
     border: 1px solid white;
     outline: none;
     background-color: black;
@@ -660,6 +661,7 @@ header {
     padding: 5px;
     padding-left: 10px;
     font-size: larger;
+    color: white;
     border: 1px solid white;
     outline: none;
     background-color: black;
@@ -676,6 +678,7 @@ header {
     padding: 5px;
     padding-left: 10px;
     font-size: larger;
+    color: white;
     border: 1px solid white;
     outline: none;
     background-color: black;
@@ -693,6 +696,7 @@ header {
     padding: 5px;
     padding-left: 10px;
     font-size: larger;
+    color: white;
     border: 1px solid white;
     outline: none;
     background-color: black;
