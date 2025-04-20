@@ -6,7 +6,7 @@
 
 body{
     overflow-x: hidden;
-    background: url('./Images/space-pc2.png');
+    background: url('./Images/Untitled\ design\ \(20\).png');
     background-size: 100%;
     /* background-repeat: repeat; */
     color: white;
@@ -784,6 +784,7 @@ footer{
 
 @media (min-width: 1px) and (max-width: 349px){
     body{
+        background: url('./Images/Untitled\ design\ \(6\).png');
         background-size: 100%;
     }
     .plant-container{
@@ -1231,7 +1232,7 @@ footer{
 
 @media (min-width: 350px) and (max-width: 399px){
     body{
-        background: url('./Images/space-phone.png');
+        background: url('./Images/Untitled\ design\ \(6\).png');
         background-size: 100%;
     }
     .plant-container{
@@ -1684,7 +1685,7 @@ footer{
 
 @media (min-width: 400px) and (max-width: 464px){
     body{
-        background: url('./Images/space-phone.png');
+        background: url('./Images/Untitled\ design\ \(6\).png');
         background-size: 100%;
     }
 .what-book ul{
@@ -2115,7 +2116,7 @@ footer{
 
 @media (min-width: 465px) and (max-width: 499px){
     body{
-        background: url('./Images/space-phone.png');
+        background: url('./Images/Untitled\ design\ \(6\).png');
         background-size: 100%;
     }
     .what-book ul{
@@ -2548,7 +2549,7 @@ footer{
 
 @media (min-width: 500px) and (max-width: 549px){
     body{
-        background: url('./Images/space-phone.png');
+        background: url('./Images/Untitled\ design\ \(6\).png');
         background-size: 100%;
     }
     .contact-headline {
@@ -2938,7 +2939,7 @@ footer{
 
 @media (min-width: 550px) and (max-width: 699px){
     body{
-        background: url('./Images/space-tablet.png');
+        background: url('./Images/Untitled\ design\ \(19\).png');
         background-size: 100%;
     }
 .navbar{
@@ -3332,7 +3333,7 @@ footer{
 }
 @media (min-width: 700px) and (max-width:899px){
     body{
-        background: url('./Images/space-tablet.png');
+        background: url('./Images/Untitled\ design\ \(19\).png');
         background-size: 100%;
     }
 
@@ -3506,10 +3507,9 @@ footer{
 
 @media (min-width: 900px) and (max-width: 1023px){
     body{
-        background: url('./Images/space-tablet.png');
+        background: url('./Images/Untitled\ design\ \(19\).png');
         background-size: 100%;
     }
-    
         .side-hero h1 {
             font-size: 4.2rem;
             /* color: #4962bf; */
@@ -3657,6 +3657,7 @@ footer{
 
 /* For screens 1024px to 1189px */
 @media (min-width: 1024px) and (max-width: 1189px) {
+
     .side-hero {
         padding-left: 100px;
 
