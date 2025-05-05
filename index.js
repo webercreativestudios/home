@@ -27,35 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const elements = document.querySelectorAll(".image-side-about, .side-about");
-//     let lastScrollTop = 0; // Variable to track the last scroll position
-
-//     function handleScroll() {
-//         const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-//         // Check if the element is in the viewport
-//         elements.forEach((element) => {
-//             const rect = element.getBoundingClientRect();
-//             const screenHeight = window.innerHeight;
-
-//             // If the element is in the viewport, add the 'show' class
-//             if (rect.top < screenHeight - 100 && rect.bottom > 100) {
-//                 element.classList.add("show");
-//             } else {
-//                 // Optionally remove the 'show' class when it goes out of view (if needed)
-//                 // element.classList.remove("show");
-//             }
-//         });
-
-//         // Update the last scroll position for future scroll direction check
-//         lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
-//     }
-
-//     window.addEventListener("scroll", handleScroll);
-//     handleScroll(); // Run once on load to check if elements are already in view
-// });
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -144,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   document.addEventListener("DOMContentLoaded", function () {
-    const words = ["Quality", "Perfect", "Creative", "Modern"];
+    const words = ["Quality", "Stylish", "Trendy", "Classy", "Modern"];
     const dynamicSpan = document.getElementById("dynamic-word");
 
     let wordIndex = 0;
@@ -178,5 +149,97 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Start animation
     typeEffect();
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const counters = document.querySelectorAll('.metric h2');
+  
+    counters.forEach(counter => {
+      counter.dataset.started = "false"; // Mark all counters as not started
+    });
+  
+    function updateCount(counter) {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText.replace('+', '');
+      const increment = Math.ceil(target / 100);
+  
+      if (count < target) {
+        counter.innerText = `${count + increment}+`;
+        setTimeout(() => updateCount(counter), 50);
+      } else {
+        counter.innerText = `${target}+`;
+      }
+    }
+  
+    function checkIfInView() {
+      counters.forEach(function (counter) {
+        const rect = counter.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+  
+        if (rect.top <= windowHeight && rect.bottom >= 0 && counter.dataset.started === "false") {
+          counter.style.opacity = 1; // Optional: make visible if you want
+          updateCount(counter);
+          counter.dataset.started = "true"; // Mark as started to prevent repeating
+        }
+      });
+    }
+  
+    window.addEventListener("scroll", checkIfInView);
+    checkIfInView(); // Check immediately in case already in view
+  });
+  
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-list');
+  
+    faqItems.forEach((faqItem) => {
+      const question = faqItem.querySelector('.faq-question');
+      const answer = faqItem.querySelector('.faq-answer');
+      const toggle = faqItem.querySelector('.faq-toggle');
+  
+      // Initially hide all answers and set toggle as "+"
+      answer.style.display = 'none';
+      toggle.textContent = '+';
+  
+      question.addEventListener('click', () => {
+        // Toggle the visibility of the answer
+        const isOpen = answer.classList.toggle('show');
+  
+        // Show or hide the answer based on the 'show' class
+        answer.style.display = isOpen ? 'block' : 'none';
+  
+        // Change the toggle text between "+" and "−"
+        toggle.textContent = isOpen ? '−' : '+';
+  
+        console.log('clicked');
+      });
+    });
+  });
+  
+  
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const circles = document.querySelectorAll('.work-circle');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target); // Trigger only once
+        }
+      });
+    }, {
+      threshold: 0.3 // Trigger when 30% of the element is visible
+    });
+
+    circles.forEach(circle => {
+      observer.observe(circle);
+    });
   });
 
