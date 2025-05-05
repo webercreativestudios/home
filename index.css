@@ -739,7 +739,7 @@ header {
 .card-aim-services li{
     list-style: none;
     margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .aim-service{
@@ -1416,7 +1416,7 @@ footer{
         margin-right: 0px;
     }
     .aim-service h1{
-        margin-top: 20px;
+        margin-top: 40px;
         font-size: 24px;
         margin-bottom: 20px;
     }
@@ -1835,7 +1835,7 @@ footer{
         margin-left: 35px;
     }
     .side-hero p {
-        font-size: 15px;
+        font-size: 16px;
         width: 80%;
         margin-left: 35px;
         text-align: center;
@@ -1864,7 +1864,7 @@ footer{
        .b-y-c1{
            font-size: large;
            height: 55px;
-           margin-left: 70px;
+           margin-left: 90px;
        }
        .side-aim h1{
         font-size: 2rem;
@@ -1910,7 +1910,7 @@ footer{
         margin-right: 0px;
     }
     .aim-service h1{
-        margin-top: 20px;
+        margin-top: 40px;
         font-size: 24px;
         margin-bottom: 20px;
     }
@@ -2077,7 +2077,7 @@ footer{
         left: 25%;
     }
     .first-side-cta h1{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .first-side-cta p{
         text-align: left;
@@ -2243,7 +2243,7 @@ footer{
     .side-about {
         width: 95%;
         /* padding: 20px; */
-        margin-left: 30px;
+        margin-left: 35px;
     }
     .side-about h1{
         font-size: 2.5rem;
@@ -2332,11 +2332,11 @@ footer{
         font-size: 2rem;
     }
     .side-hero h1 {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         margin-left: 33px;
     }
     .side-hero p {
-        font-size: 16px;
+        font-size: 17px;
         width: 80%;
         margin-left: 33px;
         text-align: center;
@@ -2364,7 +2364,7 @@ footer{
        }
        .b-y-c1{
            
-           margin-left: 90px;
+           margin-left: 110px;
        }
        .side-aim h1{
         font-size: 2.3rem;
@@ -2409,6 +2409,7 @@ footer{
         height: 420px;;
     }
     .aim-service h1{
+        margin-top: 40px;
         font-size: 24px;
         margin-bottom: 20px;
     }
