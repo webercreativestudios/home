@@ -1893,8 +1893,8 @@ footer{
     }
     .promo-main{
         height: 40px;
-        margin-left: 20px;
-        width: 320px;
+        margin-left: 30px;
+        width: 300px;
     }
     .card-service p {
         font-size: 16px;
@@ -1906,7 +1906,7 @@ footer{
 
     .aim-service{
         width: 250px;
-        height: 420px;;
+        height: 470px;;
         margin-right: 0px;
     }
     .aim-service h1{
@@ -2243,7 +2243,7 @@ footer{
     .side-about {
         width: 95%;
         /* padding: 20px; */
-        margin-left: 35px;
+        margin-left: 35 px;
     }
     .side-about h1{
         font-size: 2.5rem;
