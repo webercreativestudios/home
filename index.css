@@ -140,18 +140,22 @@ html {
     height: var(--bar-h);         /* Match the bar height */
     background: #fff;             /* White color for the strip */
     transform: skewX(-20deg);     /* Skew the strip for visual effect */
-    animation: glide var(--speed) linear infinite;
+    animation: glide2 2s linear infinite;
   }
 
   /* Second strip with a delay to create an infinite flow */
   .strip-underline span::after {
-    animation-delay: calc(var(--speed) / 2);
+    animation-delay: 2s;
   }
 
   /* Animation to make the strip move inside the blue bar */
   @keyframes glide {
     0%   { left: calc(-1 * var(--strip-w)); }
     100% { left: 100%; }  /* Move from left to right */
+  }
+  @keyframes glide2{
+    0%   { left: calc(-1 * var(--strip-w)); }
+    100% { left: 150px; }  /* Move from left to right */
   }
 
 
