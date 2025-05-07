@@ -1627,10 +1627,6 @@ footer{
          font-size: medium;
     }
 
-
-
-
-
     .sub-main-desc{
         width: 85%;
         padding: 20px;
@@ -1658,9 +1654,6 @@ footer{
     .card-project img{
         width: 350px;
     }
-
-
-
 
     .options {
         display: none; /* Hide by default */
@@ -5438,7 +5431,7 @@ footer{
     }
     .options {
         width: 70%;
-        font-size: medium;
+        font-size: large;
     }
 
     .side-hero h1 {
