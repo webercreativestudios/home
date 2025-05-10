@@ -441,7 +441,7 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 500px;
     gap: 1rem;
     /* padding-left: 30px; */
@@ -3134,6 +3134,21 @@ footer{
 }
 
 @media (min-width: 1190px) and (max-width: 1369px) {
+        .strip-underline::before{
+        left: 16%;
+    }
+    .first-side-cta h1{
+        font-size: 2.8rem;
+    }
+    .first-side-cta p{
+        font-size: 16px;
+    }
+    .email-phone p{
+        font-size: 17px;
+    }
+    .e-p{
+        margin-right: 10px;
+    }
     .main-services{
         margin-top: 50px;
     }
