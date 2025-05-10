@@ -954,6 +954,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+        z-index: 999;
     }
 
     .options ul {
@@ -1248,6 +1249,7 @@ footer{
     .options {
         display: none; /* Hide by default */
         position: absolute;
+        /* z-index: 9999; */
         top: 90px; /* Adjust based on your navbar height */
         left: 15%;
         right: 0;
@@ -1258,14 +1260,16 @@ footer{
         align-items: center;
         transition: all 0.3s ease-in-out; /* Smooth transition */
         opacity: 0; /* Initially hidden */
-        transform: translateY(-20px); /* Initially moved up */
+        transform: translateY(-20px); 
     }
 
     .options.show {
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+        z-index: 999;
     }
+    
 
     .options ul {
         display: flex;
@@ -1577,6 +1581,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
     
     .options ul {
@@ -1877,6 +1882,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {
@@ -2185,6 +2191,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {
@@ -2485,6 +2492,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {

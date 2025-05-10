@@ -954,6 +954,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {
@@ -1265,6 +1266,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {
@@ -1577,6 +1579,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
     
     .options ul {
@@ -1877,6 +1880,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {
@@ -2185,6 +2189,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {
@@ -2485,6 +2490,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
+                z-index: 999;
     }
 
     .options ul {
