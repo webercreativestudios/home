@@ -239,7 +239,7 @@ header {
     margin-top: 15px;
 }
 
-.card-side-services, .card-service {
+/* .card-side-services, .card-service {
     opacity: 0;
     transform: scale(0.8) rotateX(20deg);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -249,7 +249,7 @@ header {
 .card-side-services.show, .card-service.show {
     opacity: 1;
     transform: scale(1) rotateX(0deg);
-}
+} */
 
 .learn a{
     color: black;
@@ -698,6 +698,9 @@ footer{
 
 
 @media (min-width: 1px) and (max-width: 359px){
+    .main-services{
+        margin-top: 10px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -1026,6 +1029,9 @@ footer{
     .card-service p {
         font-size: 18px;
     }
+    .main-services{
+        margin-top: 10px;
+    }
 
     .main-hero{
         height: 260px;
@@ -1311,6 +1317,9 @@ footer{
 }
 
 @media (min-width: 400px) and (max-width: 464px){
+    .main-services{
+        margin-top: 10px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -1622,6 +1631,9 @@ footer{
 
 
 @media (min-width: 465px) and (max-width: 499px){
+    .main-services{
+        margin-top: 10px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -1918,6 +1930,9 @@ footer{
 
 
 @media (min-width: 500px) and (max-width: 549px){
+    .main-services{
+        margin-top: 30px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -2223,6 +2238,9 @@ footer{
 
 
 @media (min-width: 550px) and (max-width: 699px){
+    .main-services{
+        margin-top: 30px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -2512,6 +2530,9 @@ footer{
 }
 
 @media (min-width: 700px) and (max-width:899px){
+    .main-services{
+        margin-top: 30px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -2734,6 +2755,9 @@ footer{
 }
 
 @media (min-width: 900px) and (max-width: 1023px){
+    .main-services{
+        margin-top: 50px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -2929,6 +2953,9 @@ footer{
 }
 
 @media (min-width: 1024px) and (max-width: 1189px) {
+    .main-services{
+        margin-top: 50px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -3107,6 +3134,9 @@ footer{
 }
 
 @media (min-width: 1190px) and (max-width: 1369px) {
+    .main-services{
+        margin-top: 50px;
+    }
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */

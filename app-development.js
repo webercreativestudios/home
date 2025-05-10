@@ -9,33 +9,33 @@ function toggleMenu() {
     menuToggle.classList.toggle('open');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const serviceSection = document.querySelector(".card-side-services");
-    const services = document.querySelectorAll(".card-service");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const serviceSection = document.querySelector(".card-side-services");
+//     const services = document.querySelectorAll(".card-service");
 
-    let lastScrollTop = 0; // Variable to track the last scroll position
+//     let lastScrollTop = 0; // Variable to track the last scroll position
 
-    function handleScroll() {
-        const sectionPosition = serviceSection.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
+//     function handleScroll() {
+//         const sectionPosition = serviceSection.getBoundingClientRect().top;
+//         const screenHeight = window.innerHeight;
 
-        // Check if the section is in the viewport
-        if (sectionPosition < screenHeight - 100 && sectionPosition > -serviceSection.offsetHeight / 2 && !serviceSection.classList.contains('show')) {
-            serviceSection.classList.add("show");
-            services.forEach((service, index) => {
-                setTimeout(() => {
-                    service.classList.add("show");
-                }, index * 150); // Delay for staggered effect
-            });
-        }
+//         // Check if the section is in the viewport
+//         if (sectionPosition < screenHeight - 100 && sectionPosition > -serviceSection.offsetHeight / 2 && !serviceSection.classList.contains('show')) {
+//             serviceSection.classList.add("show");
+//             services.forEach((service, index) => {
+//                 setTimeout(() => {
+//                     service.classList.add("show");
+//                 }, index * 150); // Delay for staggered effect
+//             });
+//         }
 
-        // Update the last scroll position to the current scroll position
-        lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    }
+//         // Update the last scroll position to the current scroll position
+//         lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     }
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run once on load to check if already in view
-});
+//     window.addEventListener("scroll", handleScroll);
+//     handleScroll(); // Run once on load to check if already in view
+// });
 
 
 document.addEventListener('DOMContentLoaded', () => {
