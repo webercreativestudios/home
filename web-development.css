@@ -12,6 +12,54 @@
     --speed: 3.5s;     /* Speed of the animation */
   }
 
+
+.phone-service {
+    position: relative; /* Required for ::after positioning */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    width: 270px;
+    height: 380px;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden; /* Prevents ::after from overflowing */
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.phone-service h1{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.service{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+
+
+
+.second-service a{
+    color: black;
+    text-decoration: none;
+}
+.second-service a:hover{
+    color: #4962bf;
+}
+
+
+
 .about-headline {
     position: relative;
     display: inline-block;
@@ -268,9 +316,9 @@ header {
 #web-development a:hover{
     color: orange;
 }
-/* #web-development :hover{
+#web-development a :hover{
     color: orange;
-} */
+}
 
 
 #web-development{
@@ -698,7 +746,11 @@ footer{
 
 
 @media (min-width: 1px) and (max-width: 359px){
+    .phone-service {
+        display: flex;
+    }
     .main-services{
+        
         margin-top: 10px;
     }
     .card-side-services ul {
@@ -710,11 +762,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 0px;
     }
 
     .card-service {
+        display: none;
         width: 250px;
     }
     .card-service h1 {
@@ -812,7 +865,7 @@ footer{
          width: 335px;
        }
        .first-side-aboutus h1{
-         font-size: 2rem;
+         font-size: 1.8rem;
          margin-bottom: 35px;
          margin-top: 35px;
        }
@@ -1008,6 +1061,11 @@ footer{
 
 
 @media (min-width: 360px) and (max-width: 399px){
+    .phone-service{
+        display: flex;
+        width: 320px;
+    }
+
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -1017,11 +1075,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 0px;
     }
 
     .card-service {
+        display: none;
         width: 250px;
     }
     .card-service h1 {
@@ -1120,7 +1179,7 @@ footer{
          width: 355px;
        }
        .first-side-aboutus h1{
-         font-size: 2.2rem;
+         font-size: 1.8rem;
          margin-bottom: 35px;
          margin-top: 35px;
        }
@@ -1321,6 +1380,11 @@ footer{
 }
 
 @media (min-width: 400px) and (max-width: 464px){
+        .phone-service{
+        display: flex;
+        width: 320px;
+    }
+
     .main-services{
         margin-top: 10px;
     }
@@ -1333,11 +1397,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 280px;
     }
     .card-service h1 {
@@ -1636,6 +1701,10 @@ footer{
 
 
 @media (min-width: 465px) and (max-width: 499px){
+            .phone-service{
+        display: flex;
+        width: 320px;
+    }
     .main-services{
         margin-top: 10px;
     }
@@ -1648,11 +1717,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 300px;
     }
     .card-service h1 {
@@ -1936,6 +2006,10 @@ footer{
 
 
 @media (min-width: 500px) and (max-width: 549px){
+            .phone-service{
+        display: flex;
+        width: 320px;
+    }
     .main-services{
         margin-top: 30px;
     }
@@ -1948,11 +2022,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 300px;
     }
     .card-service h1 {
@@ -2245,6 +2320,10 @@ footer{
 
 
 @media (min-width: 550px) and (max-width: 699px){
+                .phone-service{
+        display: flex;
+        width: 350px;
+    }
     .main-services{
         margin-top: 30px;
     }
@@ -2257,11 +2336,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 300px;
     }
     .card-service h1 {
@@ -2538,6 +2618,11 @@ footer{
 }
 
 @media (min-width: 700px) and (max-width:899px){
+                    .phone-service{
+        display: flex;
+        width: 380px;
+        height: 400px;
+    }
     .main-services{
         margin-top: 30px;
     }
@@ -2550,11 +2635,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 350px;
     }
     .card-service h1 {
