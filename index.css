@@ -1,10 +1,5 @@
 html {
     scroll-behavior: smooth;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
   }
   
 
@@ -13,6 +8,8 @@ html {
     padding: 0;
     font-family: "Nunito", sans-serif;
     -webkit-tap-highlight-color: transparent;
+            max-width: 2000px;
+            
 }
 
 
@@ -1893,7 +1890,7 @@ footer{
     }
     .promo-main{
         height: 40px;
-        margin-left: 30px;
+        margin-left: 35px;
         width: 300px;
     }
     .card-service p {
