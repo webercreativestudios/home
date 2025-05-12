@@ -50,16 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function toggleMenu() {
-    const options = document.querySelector('.options');
-    const menuToggle = document.querySelector('.menu-toggle');
+// function toggleMenu() {
+//     const options = document.querySelector('.options');
+//     const menuToggle = document.querySelector('.menu-toggle');
 
-    // Toggle the dropdown menu visibility
-    options.classList.toggle('show');
+//     // Toggle the dropdown menu visibility
+//     options.classList.toggle('show');
     
-    // Toggle the "open" class to animate the hamburger to a cross
-    menuToggle.classList.toggle('open');
+//     // Toggle the "open" class to animate the hamburger to a cross
+//     menuToggle.classList.toggle('open');
+// }
+
+
+function toggleNavbar() {
+  const navbar = document.getElementById("navbar");
+  const hamburger = document.getElementById("hamburger");
+
+  navbar.classList.toggle("expanded");
+  hamburger.classList.toggle("active");
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const progressBars = document.querySelectorAll('.about-list');
