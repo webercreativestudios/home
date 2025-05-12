@@ -105,7 +105,12 @@ html {
         transform: rotate(-45deg) translate(7px, -6.5px);
       }
       .get-in-touch {
-    width: 140px !important;}
+    width: 140px !important;
+    background: none !important;
+    color: black !important;
+            font-size: 18px !important;
+            font-weight: 500 !important;
+}
     }
 
 
