@@ -5,6 +5,164 @@
     -webkit-tap-highlight-color: transparent;
         max-width: 2000px;
 }
+
+.menu{
+    display: none;
+}
+
+@media (min-width: 1px) and (max-width: 699px) {
+    .main-hero{
+        margin-top: 20px !important;
+    }
+  .navbar {
+    margin-left: 0px !important;
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .navbar .brand {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    top: 12px;
+    right: 20px;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .hamburger div {
+    height: 3px;
+    background-color: #4962bf;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6.5px);
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  .navbar.expanded{
+    flex-wrap: wrap;
+    background-color: #4963bf0c;
+  }
+
+  /* When the navbar expands */
+  .navbar.expanded .menu {
+    display: flex;
+    animation: slideDown 0.3s ease-out forwards;
+  }
+
+  /* When the navbar collapses */
+  .navbar:not(.expanded) .menu {
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  /* Slide-down animation when expanding */
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Slide-up animation when collapsing */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+  }
+
+  .menu a {
+    color: black;
+    text-decoration: none;
+    padding: 13px 0;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #home {
+    background-color: #212d57;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .get-in-touch {
+    width: 140px !important;
+    background: none !important;
+    color: black !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+}
+
+
+
+
+    
+    @media (min-width: 700px) {
+    .menu a {
+        color: black;
+        text-decoration: none;
+        width: 100%;
+      }
+
+    .menu {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Center horizontally */
+        justify-content: space-evenly;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+
+
 :root {
     --bar-w: 150px;    /* Width of the blue bar (adjustable) */
     --bar-h: 4px;      /* Thickness of the blue bar */
@@ -2843,8 +3001,8 @@ footer{
     .faq-question {
         max-width: 590px;
     }
-    .options {
-        width: 70%;
+    .menu {
+        width: 60%;
         font-size: 18px;
     }
 }
@@ -3040,8 +3198,8 @@ footer{
     .faq-question {
         max-width: 800px;
     }
-    .options {
-        width: 70%;
+    .menu {
+        width: 50%;
         font-size: 18px;
     }
 
@@ -3221,9 +3379,9 @@ footer{
     .faq-question {
         max-width: 800px;
     }
-    .options {
-        width: 70%;
-        font-size: medium;
+    .menu {
+        width: 50%;
+        font-size: 18px;
     }
 
 }

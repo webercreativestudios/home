@@ -1,13 +1,11 @@
-function toggleMenu() {
-    const options = document.querySelector('.options');
-    const menuToggle = document.querySelector('.menu-toggle');
+function toggleNavbar() {
+  const navbar = document.getElementById("navbar");
+  const hamburger = document.getElementById("hamburger");
 
-    // Toggle the dropdown menu visibility
-    options.classList.toggle('show');
-    
-    // Toggle the "open" class to animate the hamburger to a cross
-    menuToggle.classList.toggle('open');
+  navbar.classList.toggle("expanded");
+  hamburger.classList.toggle("active");
 }
+
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const serviceSection = document.querySelector(".card-side-services");

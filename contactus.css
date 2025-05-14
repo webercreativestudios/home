@@ -5,6 +5,166 @@
     -webkit-tap-highlight-color: transparent;
         max-width: 2000px;
 }
+
+.menu{
+    display: none;
+}
+
+@media (min-width: 1px) and (max-width: 699px) {
+    .main-hero{
+        margin-top: 20px !important;
+    }
+  .navbar {
+    margin-left: 0px !important;
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .navbar .brand {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    top: 12px;
+    right: 20px;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .hamburger div {
+    height: 3px;
+    background-color: #4962bf;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6.5px);
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  .navbar.expanded{
+    flex-wrap: wrap;
+    background-color: #4963bf0c;
+  }
+
+  /* When the navbar expands */
+  .navbar.expanded .menu {
+    display: flex;
+    animation: slideDown 0.3s ease-out forwards;
+  }
+
+  /* When the navbar collapses */
+  .navbar:not(.expanded) .menu {
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  /* Slide-down animation when expanding */
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Slide-up animation when collapsing */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+  }
+
+  .menu a {
+    color: black;
+    text-decoration: none;
+    padding: 13px 0;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #home {
+    background-color: #212d57 !important;
+    color: white !important;
+    width: 592px !important;
+    height: 50px !important;
+    border-radius: 10px;
+  }
+
+
+  .get-in-touch {
+    width: 140px !important;
+    background: none !important;
+    color: black !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+}
+
+
+
+
+    
+    @media (min-width: 700px) {
+    .menu a {
+        color: black;
+        text-decoration: none;
+        width: 100%;
+      }
+
+    .menu {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Center horizontally */
+        justify-content: space-evenly;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+
+
 :root {
     --bar-w: 150px;    /* Width of the blue bar (adjustable) */
     --bar-h: 4px;      /* Thickness of the blue bar */
@@ -12,6 +172,54 @@
     --strip-w: 14px;   /* Width of the white strips */
     --speed: 3.5s;     /* Speed of the animation */
   }
+
+
+.phone-service {
+    position: relative; /* Required for ::after positioning */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    width: 270px;
+    height: 380px;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden; /* Prevents ::after from overflowing */
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.phone-service h1{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.service{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+
+
+
+.second-service a{
+    color: black;
+    text-decoration: none;
+}
+.second-service a:hover{
+    color: #4962bf;
+}
+
+
 
 .about-headline {
     position: relative;
@@ -164,7 +372,7 @@ header {
 }
 
 .main-services {
-    margin-top: 100px;
+    margin-top: 50px;
     max-width: 2000px;
     display: flex;
     justify-content: center;
@@ -269,9 +477,9 @@ header {
 #web-development a:hover{
     color: orange;
 }
-/* #web-development :hover{
+#web-development a :hover{
     color: orange;
-} */
+}
 
 
 #web-development{
@@ -406,7 +614,6 @@ header {
 
   .main-cta{
     /* margin-top: 100px; */
-    
     background-color: #4963bf0c;
     display: flex;
     justify-content: center;
@@ -426,7 +633,7 @@ header {
     justify-content: center;
     gap: 1rem;
     flex-direction: column;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
 }
 
 .first-side-cta h1{
@@ -443,7 +650,7 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 500px;
     gap: 1rem;
     /* padding-left: 30px; */
@@ -665,7 +872,7 @@ header {
 
 footer{
     max-width: 2000px;
-    margin-top: 0px;
+    margin-top: 70px;
     background-color: #4962bf;
     height: 150px;
     padding: 50px;
@@ -700,7 +907,11 @@ footer{
 
 
 @media (min-width: 1px) and (max-width: 359px){
+    .phone-service {
+        display: flex;
+    }
     .main-services{
+        
         margin-top: 10px;
     }
     .card-side-services ul {
@@ -712,11 +923,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 0px;
     }
 
     .card-service {
+        display: none;
         width: 250px;
     }
     .card-service h1 {
@@ -730,7 +942,7 @@ footer{
         height: 260px;
     }
     .hero-heading{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .main-hero p{
         margin-top: 30px;
@@ -814,7 +1026,7 @@ footer{
          width: 335px;
        }
        .first-side-aboutus h1{
-         font-size: 2rem;
+         font-size: 1.8rem;
          margin-bottom: 35px;
          margin-top: 35px;
        }
@@ -956,7 +1168,7 @@ footer{
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
-                z-index: 999;
+        z-index: 999;
     }
 
     .options ul {
@@ -1010,6 +1222,11 @@ footer{
 
 
 @media (min-width: 360px) and (max-width: 399px){
+    .phone-service{
+        display: flex;
+        width: 320px;
+    }
+
     .card-side-services ul {
         flex-wrap: wrap;
         /* width: 1370px; */
@@ -1019,11 +1236,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 0px;
     }
 
     .card-service {
+        display: none;
         width: 250px;
     }
     .card-service h1 {
@@ -1040,7 +1258,7 @@ footer{
         height: 260px;
     }
     .hero-heading{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .main-hero p{
         margin-top: 30px;
@@ -1122,7 +1340,7 @@ footer{
          width: 355px;
        }
        .first-side-aboutus h1{
-         font-size: 2.2rem;
+         font-size: 1.8rem;
          margin-bottom: 35px;
          margin-top: 35px;
        }
@@ -1251,6 +1469,7 @@ footer{
     .options {
         display: none; /* Hide by default */
         position: absolute;
+        /* z-index: 9999; */
         top: 90px; /* Adjust based on your navbar height */
         left: 15%;
         right: 0;
@@ -1261,15 +1480,16 @@ footer{
         align-items: center;
         transition: all 0.3s ease-in-out; /* Smooth transition */
         opacity: 0; /* Initially hidden */
-        transform: translateY(-20px); /* Initially moved up */
+        transform: translateY(-20px); 
     }
 
     .options.show {
         display: flex;
         opacity: 1;
         transform: translateY(0); /* Moves the list into view */
-                z-index: 999;
+        z-index: 999;
     }
+    
 
     .options ul {
         display: flex;
@@ -1321,6 +1541,11 @@ footer{
 }
 
 @media (min-width: 400px) and (max-width: 464px){
+        .phone-service{
+        display: flex;
+        width: 320px;
+    }
+
     .main-services{
         margin-top: 10px;
     }
@@ -1333,11 +1558,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 280px;
     }
     .card-service h1 {
@@ -1636,6 +1862,10 @@ footer{
 
 
 @media (min-width: 465px) and (max-width: 499px){
+            .phone-service{
+        display: flex;
+        width: 320px;
+    }
     .main-services{
         margin-top: 10px;
     }
@@ -1648,11 +1878,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 300px;
     }
     .card-service h1 {
@@ -1936,6 +2167,10 @@ footer{
 
 
 @media (min-width: 500px) and (max-width: 549px){
+            .phone-service{
+        display: flex;
+        width: 320px;
+    }
     .main-services{
         margin-top: 30px;
     }
@@ -1948,11 +2183,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 300px;
     }
     .card-service h1 {
@@ -2245,6 +2481,10 @@ footer{
 
 
 @media (min-width: 550px) and (max-width: 699px){
+                .phone-service{
+        display: flex;
+        width: 350px;
+    }
     .main-services{
         margin-top: 30px;
     }
@@ -2257,11 +2497,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 300px;
     }
     .card-service h1 {
@@ -2538,6 +2779,11 @@ footer{
 }
 
 @media (min-width: 700px) and (max-width:899px){
+                    .phone-service{
+        display: flex;
+        width: 380px;
+        height: 400px;
+    }
     .main-services{
         margin-top: 30px;
     }
@@ -2550,11 +2796,12 @@ footer{
         font-size: 3rem;
     }
     .card-side-services li {
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         margin-right: 10px;
     }
 
     .card-service {
+        display: none;
         width: 350px;
     }
     .card-service h1 {
@@ -2756,8 +3003,8 @@ footer{
     .faq-question {
         max-width: 590px;
     }
-    .options {
-        width: 70%;
+    .menu {
+        width: 60%;
         font-size: 18px;
     }
 }
@@ -2888,7 +3135,7 @@ footer{
     }
     
     .strip-underline::before{
-        left: 21%;
+        left: 19%;
     }
     .first-side-cta h1{
         font-size: 2rem;
@@ -2953,8 +3200,8 @@ footer{
     .faq-question {
         max-width: 800px;
     }
-    .options {
-        width: 70%;
+    .menu {
+        width: 50%;
         font-size: 18px;
     }
 
@@ -3134,19 +3381,19 @@ footer{
     .faq-question {
         max-width: 800px;
     }
-    .options {
-        width: 70%;
-        font-size: medium;
+    .menu {
+        width: 50%;
+        font-size: 18px;
     }
 
 }
 
 @media (min-width: 1190px) and (max-width: 1369px) {
-            .strip-underline::before{
-        left: 17%;
+        .strip-underline::before{
+        left: 16%;
     }
     .first-side-cta h1{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     .first-side-cta p{
         font-size: 16px;
@@ -3262,7 +3509,7 @@ footer{
           left: 18%;
       }
     footer {
-        margin-top: 0px;
+        margin-top: 70px;
         background-color: #4962bf;
         height: 120px;
         padding: 50px;
@@ -3426,7 +3673,7 @@ footer{
     }
 
     footer {
-        margin-top: 0px;
+        margin-top: 70px;
         background-color: #4962bf;
         height: 120px;
         padding: 50px;
