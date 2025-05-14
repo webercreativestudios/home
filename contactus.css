@@ -125,14 +125,14 @@
   #home {
     background-color: #212d57 !important;
     color: white !important;
-    width: 592px !important;
+    width: 100% !important;
     height: 50px !important;
     border-radius: 10px;
   }
 
 
   .get-in-touch {
-    width: 140px !important;
+    /* width: 140px !important; */
     background: none !important;
     color: black !important;
     font-size: 18px !important;
