@@ -50,17 +50,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// function toggleMenu() {
-//     const options = document.querySelector('.options');
-//     const menuToggle = document.querySelector('.menu-toggle');
+  // Disable right-click
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
 
-//     // Toggle the dropdown menu visibility
-//     options.classList.toggle('show');
-    
-//     // Toggle the "open" class to animate the hamburger to a cross
-//     menuToggle.classList.toggle('open');
-// }
+  // Disable certain key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
 
+    // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+    if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) {
+      e.preventDefault();
+    }
+
+    // Ctrl+U (view source)
+    if (e.ctrlKey && e.key === 'u') {
+      e.preventDefault();
+    }
+  });
 
 function toggleNavbar() {
   const navbar = document.getElementById("navbar");

@@ -7,6 +7,30 @@ function toggleNavbar() {
 }
 
 
+  // Disable right-click
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // Disable certain key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+    if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) {
+      e.preventDefault();
+    }
+
+    // Ctrl+U (view source)
+    if (e.ctrlKey && e.key === 'u') {
+      e.preventDefault();
+    }
+  });
+
+
 // document.addEventListener("DOMContentLoaded", function () {
 //     const serviceSection = document.querySelector(".card-side-services");
 //     const services = document.querySelectorAll(".card-service");
