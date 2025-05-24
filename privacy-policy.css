@@ -16,6 +16,19 @@
 }
 
 @media (min-width: 1px) and (max-width: 699px) {
+    .first-side-aboutus{
+    width: 90% ;
+  }
+    .second-side-mission{
+    width: 90%;
+  }
+  .first-side-vision{
+        width: 90% ;
+  }
+    .second-side-offer{
+    width: 90% ;
+  }
+
     .main-hero{
         margin-top: 20px !important;
     }
@@ -382,7 +395,7 @@ header {
 
   }
   .first-side-aboutus{
-    width: 45% !important;
+    width: 45% ;
   }
 
   .first-side-aboutus li{
@@ -429,7 +442,7 @@ header {
 
   }
   .second-side-mission{
-    width: 45% !important;
+    width: 45%;
   }
 
   .second-side-mission li{
@@ -581,7 +594,7 @@ header {
 
   }
   .first-side-vision{
-    width: 45% !important;
+    width: 45%;
 
   }
 
@@ -618,7 +631,7 @@ header {
 
   }
   .second-side-offer{
-    width: 45% !important;
+    width: 45% ;
   }
 
   .second-side-offer li{
