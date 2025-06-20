@@ -9,8 +9,14 @@ html {
     font-family: "Nunito", sans-serif;
     -webkit-tap-highlight-color: transparent;
             max-width: 2000px;
-            
+
 }
+/* html{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
 .menu{
     display: none;
 }
